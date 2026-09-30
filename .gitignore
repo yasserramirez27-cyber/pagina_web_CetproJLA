@@ -1,0 +1,5 @@
+# Configuración local de Claude Code
+.claude/
+
+# Versiones anteriores del sitio (solo en esta PC)
+respaldo/
