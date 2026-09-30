@@ -1,0 +1,1304 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <!-- ============================================================
+       CETPRO JOAQUÍN LÓPEZ ANTAY — Ayacucho, Perú
+       Proyecto: Sitio Web Institucional
+       Versión:  1.0.0 | Paso 1 — Header / Navbar
+       ============================================================ -->
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+  <!-- ── SEO Básico ─────────────────────────────────────────── -->
+  <title>CETPRO Joaquín López Antay | Educación Técnica Gratuita — Ayacucho</title>
+  <meta name="description"
+    content="Centro de Educación Técnico-Productiva Joaquín López Antay. Educación técnica gratuita y de calidad en Ayacucho, Perú. Matrícula abierta." />
+  <meta name="keywords"
+    content="CETPRO, Ayacucho, educación técnica, cursos gratuitos, matrícula, Joaquín López Antay, Peru" />
+  <meta name="author" content="CETPRO Joaquín López Antay" />
+  <meta name="robots" content="index, follow" />
+
+  <!-- ── Open Graph / Redes Sociales ───────────────────────── -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="CETPRO Joaquín López Antay — Ayacucho" />
+  <meta property="og:description"
+    content="Educación técnica pública y gratuita en Ayacucho. Conoce nuestras carreras e inscríbete." />
+  <meta property="og:locale" content="es_PE" />
+
+  <!-- ── Fuentes: Google Fonts (subset latino, preconnect) ──── -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700;800&display=swap"
+    rel="stylesheet" />
+
+  <!-- ── Hoja de Estilos Principal ─────────────────────────── -->
+  <link rel="stylesheet" href="css/styles.css?v=3" />
+  <meta name="theme-color" content="#C8006A" />
+
+  <!-- ── Favicon SVG inline (sin archivo externo) ─────────── -->
+  <link rel="icon"
+    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌸</text></svg>" />
+</head>
+
+<body>
+
+  <!-- Íconos reutilizables (WhatsApp, Facebook, YouTube) -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="i-wa" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.3a.5.5 0 0 0 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.1 5.1 0 0 0 1.1 2.7 11.6 11.6 0 0 0 4.4 3.9c1.6.7 2.3.8 3.1.6a2.6 2.6 0 0 0 1.7-1.2 2.1 2.1 0 0 0 .2-1.2c-.1-.1-.3-.2-.5-.3Z"/></symbol>
+    <symbol id="i-fb" viewBox="0 0 24 24"><path fill="currentColor" d="M13.5 22v-8.2h2.8l.4-3.2h-3.2V8.5c0-.9.3-1.6 1.6-1.6h1.7V4.1a23 23 0 0 0-2.5-.1c-2.5 0-4.2 1.5-4.2 4.3v2.3H7.3v3.2h2.8V22Z"/></symbol>
+    <symbol id="i-yt" viewBox="0 0 24 24"><path fill="currentColor" d="M22.5 7.2a2.8 2.8 0 0 0-2-2C18.8 4.7 12 4.7 12 4.7s-6.8 0-8.5.5a2.8 2.8 0 0 0-2 2A29 29 0 0 0 1 12a29 29 0 0 0 .5 4.8 2.8 2.8 0 0 0 2 2c1.7.5 8.5.5 8.5.5s6.8 0 8.5-.5a2.8 2.8 0 0 0 2-2A29 29 0 0 0 23 12a29 29 0 0 0-.5-4.8ZM9.8 15V9l5.7 3Z"/></symbol>
+  </svg>
+
+  <!-- ============================================================
+       COMPONENTE 1: HEADER / BARRA DE NAVEGACIÓN
+       ============================================================ -->
+  <header class="header" id="header" role="banner">
+    <div class="header__container">
+
+      <!-- ── Logo + Identidad Institucional ──────────────────── -->
+      <a href="#inicio" class="header__brand" aria-label="Ir al inicio — CETPRO Joaquín López Antay">
+        <!-- Ícono floral SVG (retablo, sin imagen externa) -->
+        <span class="header__brand-icon" aria-hidden="true">
+          <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <ellipse cx="20" cy="10" rx="5" ry="9" fill="#C8006A" opacity="0.9"/>
+            <ellipse cx="30" cy="20" rx="9" ry="5" fill="#E8001C" opacity="0.85"/>
+            <ellipse cx="20" cy="30" rx="5" ry="9" fill="#C8006A" opacity="0.9"/>
+            <ellipse cx="10" cy="20" rx="9" ry="5" fill="#E8001C" opacity="0.85"/>
+            <circle cx="20" cy="20" r="6" fill="#F5C200"/>
+            <circle cx="20" cy="20" r="3" fill="#C8006A"/>
+          </svg>
+        </span>
+        <!-- Nombre institucional -->
+        <span class="header__brand-text">
+          <span class="header__brand-name">CETPRO</span>
+          <span class="header__brand-subtitle">Joaquín López Antay</span>
+        </span>
+      </a>
+
+      <!-- ── Navegación Principal (desktop) ──────────────────── -->
+      <nav class="nav" id="main-nav" role="navigation" aria-label="Menú principal">
+        <ul class="nav__list" role="list">
+          <li class="nav__item">
+            <a href="#inicio" class="nav__link nav__link--active" aria-current="page">Inicio</a>
+          </li>
+          <li class="nav__item">
+            <a href="#carreras" class="nav__link">Carreras</a>
+          </li>
+          <li class="nav__item">
+            <a href="#requisitos" class="nav__link">Inscripción</a>
+          </li>
+          <li class="nav__item">
+            <a href="#redes" class="nav__link">Novedades</a>
+          </li>
+          <li class="nav__item">
+            <a href="#contacto" class="nav__link">Contacto</a>
+          </li>
+        </ul>
+
+        <!-- ── CTA Principal: Matrícula Gratuita ─────────────── -->
+        <a href="#requisitos" class="btn btn--cta" id="btn-matricula" aria-label="Inscríbete gratis">
+          <span class="btn__icon" aria-hidden="true">✦</span>
+          Matrícula Gratuita
+        </a>
+      </nav>
+
+      <!-- ── Botón Hamburguesa (móvil) ───────────────────────── -->
+      <button
+        class="hamburger"
+        id="hamburger-btn"
+        aria-label="Abrir menú de navegación"
+        aria-expanded="false"
+        aria-controls="main-nav"
+        type="button">
+        <span class="hamburger__line hamburger__line--top"></span>
+        <span class="hamburger__line hamburger__line--mid"></span>
+        <span class="hamburger__line hamburger__line--bot"></span>
+      </button>
+
+    </div>
+  </header>
+
+  <!-- ── Overlay oscuro para cerrar menú en móvil ────────────── -->
+  <div class="nav-overlay" id="nav-overlay" aria-hidden="true"></div>
+
+
+  <!-- ============================================================
+       SECCIONES PLACEHOLDER
+       ============================================================ -->
+  <main id="main-content" role="main">
+
+    <!-- ============================================================
+         HERO: el retablo se abre al cargar; un toque lo abre o cierra
+         ============================================================ -->
+    <section id="inicio" class="section section--hero" aria-labelledby="hero-title">
+      <div class="section__container hero__grid">
+        <div class="hero__texto">
+          <span class="section__eyebrow">✦ Educación técnica pública · Ayacucho</span>
+          <h1 id="hero-title" class="hero__title">
+            Aprende un oficio y <span class="section__title-highlight">construye tu futuro</span>
+          </h1>
+          <p class="hero__lead">
+            Formación técnico-productiva gratuita con la tradición del maestro
+            Joaquín López Antay: arte, técnica y progreso para nuestra región.
+          </p>
+          <div class="hero__acciones">
+            <a href="#requisitos" class="btn btn--cta">
+              <span class="btn__icon" aria-hidden="true">✦</span> Inscríbete gratis
+            </a>
+            <a href="#carreras" class="btn btn--ghost">Ver carreras</a>
+          </div>
+          <ul class="hero__datos">
+            <li><strong>9</strong> carreras técnicas</li>
+            <li><strong>2</strong> ciclos de estudio</li>
+            <li><strong>100%</strong> gratuito</li>
+          </ul>
+        </div>
+
+        <button class="retablo-btn" id="retablo" type="button" aria-pressed="false"
+          aria-label="Abrir o cerrar las puertas del retablo">
+          <svg class="retablo" viewBox="0 0 300 340" role="img" aria-label="Ilustración de un retablo ayacuchano">
+            <rect width="300" height="340" rx="14" fill="#C8006A"/>
+            <rect x="14" y="14" width="272" height="312" rx="8" fill="#F5C200"/>
+            <rect x="30" y="30" width="240" height="280" fill="#BFE3EA"/>
+            <circle cx="150" cy="96" r="30" fill="#F5C200"/>
+            <path d="M30 250 L100 150 L160 230 L210 170 L270 250 V310 H30Z" fill="#059669"/>
+            <rect x="120" y="248" width="56" height="62" fill="#F4F0EB"/><path d="M114 250 L148 218 L182 250Z" fill="#E8001C"/>
+            <circle cx="70" cy="278" r="9" fill="#C8006A"/><rect x="62" y="288" width="16" height="22" fill="#C8006A"/>
+            <circle cx="232" cy="278" r="9" fill="#1A1A2E"/><rect x="224" y="288" width="16" height="22" fill="#1A1A2E"/>
+            <g class="puerta puerta--izq"><rect x="30" y="30" width="120" height="280" fill="#E8001C"/><rect x="42" y="42" width="96" height="256" fill="none" stroke="#F5C200" stroke-width="4"/><circle cx="132" cy="170" r="6" fill="#F5C200"/></g>
+            <g class="puerta puerta--der"><rect x="150" y="30" width="120" height="280" fill="#1A1A2E"/><rect x="162" y="42" width="96" height="256" fill="none" stroke="#F5C200" stroke-width="4"/><circle cx="168" cy="170" r="6" fill="#F5C200"/></g>
+          </svg>
+        </button>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         COMPONENTE 2: SECCIÓN PROGRAMAS DE ESTUDIO / CARRERAS 2026
+         ============================================================ -->
+    <section id="carreras" class="section carreras-section" aria-labelledby="carreras-title">
+      <div class="section__container">
+
+        <!-- ── Encabezado de Sección ──────────────────────────────── -->
+        <div class="section__header">
+          <span class="section__eyebrow" aria-hidden="true">✦ Oferta Educativa 2026</span>
+          <h2 id="carreras-title" class="section__title">
+            Programas de <span class="section__title-highlight">Estudio</span>
+          </h2>
+          <p class="section__subtitle">
+            Formación técnica de calidad, completamente gratuita. Dos ciclos de estudio
+            adaptados a tu disponibilidad y objetivos profesionales.
+          </p>
+        </div>
+
+        <!-- ── Pestañas / Filtros Dinámicos ──────────────────────── -->
+        <div class="tabs-container" role="tablist" aria-label="Filtrar programas por ciclo">
+
+          <button class="tab tab--active" data-filter="todos"
+            role="tab" aria-selected="true" id="tab-todos">
+            <span class="tab__icon" aria-hidden="true">◈</span>
+            Todos los Programas
+            <span class="tab__count" id="count-todos">9</span>
+          </button>
+
+          <button class="tab" data-filter="auxiliar"
+            role="tab" aria-selected="false" id="tab-auxiliar">
+            <span class="tab__icon" aria-hidden="true">◉</span>
+            Ciclo Auxiliar Técnico
+            <span class="tab__badge">1 Año</span>
+          </button>
+
+          <button class="tab" data-filter="tecnico"
+            role="tab" aria-selected="false" id="tab-tecnico">
+            <span class="tab__icon" aria-hidden="true">◈</span>
+            Ciclo Técnico
+            <span class="tab__badge tab__badge--tecnico">2 Años</span>
+          </button>
+
+        </div>
+
+        <!-- ── Indicador de resultados ─────────────────────────── -->
+        <p class="carreras-results" id="carreras-results" aria-live="polite">
+          Mostrando <strong id="visible-count">9</strong> programas disponibles
+        </p>
+
+        <!-- ── Cuadrícula de Tarjetas ─────────────────────────────── -->
+        <div class="carreras-grid" id="carreras-grid" role="region" aria-label="Programas disponibles">
+
+          <!-- ════════════════════════════════════════
+               CICLO AUXILIAR TÉCNICO — 4 programas
+               ════════════════════════════════════════ -->
+
+          <!-- Card 1: Servicio Básico Gastronómico -->
+          <article class="card" data-category="auxiliar" data-carrera="gastronomia"
+            style="--card-color:#E84A12; --card-soft:rgba(232,74,18,0.10);"
+            aria-label="Programa: Servicio Básico Gastronómico">
+            <div class="card__header">
+              <div class="card__icon" style="background:var(--card-soft); border-color:var(--card-color)">
+                <svg viewBox="0 0 48 48" fill="none" aria-hidden="true">
+                  <path d="M12 8v14a10 10 0 0020 0V8" stroke="#E84A12" stroke-width="2.5" stroke-linecap="round"/>
+                  <line x1="22" y1="8" x2="22" y2="26" stroke="#E84A12" stroke-width="2.5" stroke-linecap="round"/>
+                  <line x1="32" y1="8" x2="32" y2="40" stroke="#E84A12" stroke-width="2.5" stroke-linecap="round"/>
+                  <line x1="8" y1="40" x2="40" y2="40" stroke="#E84A12" stroke-width="2.5" stroke-linecap="round"/>
+                </svg>
+              </div>
+              <div class="card__badges">
+                <span class="badge badge--gratuito">★ 100% Gratuito</span>
+                <span class="badge badge--ciclo">1 Año</span>
+              </div>
+            </div>
+            <div class="card__body">
+              <h3 class="card__title">Servicio Básico Gastronómico</h3>
+              <p class="card__desc">Prepara platillos, maneja cocina profesional y brinda atención de calidad en restaurantes y servicios alimentarios.</p>
+            </div>
+            <div class="card__footer">
+              <span class="card__ciclo-tag">Auxiliar Técnico</span>
+              <button class="btn card__btn-detalle" data-carrera="gastronomia"
+                aria-label="Ver detalles de Servicio Básico Gastronómico" type="button">
+                Ver Detalles →
+              </button>
+            </div>
+            <div class="card__glow" aria-hidden="true"></div>
+          </article>
+
+          <!-- Card 2: Panadería -->
+          <article class="card" data-category="auxiliar" data-carrera="panaderia"
+            style="--card-color:#D97706; --card-soft:rgba(217,119,6,0.10);"
+            aria-label="Programa: Panadería">
+            <div class="card__header">
+              <div class="card__icon" style="background:var(--card-soft); border-color:var(--card-color)">
+                <svg viewBox="0 0 48 48" fill="none" aria-hidden="true">
+                  <ellipse cx="24" cy="28" rx="16" ry="10" stroke="#D97706" stroke-width="2.5"/>
+                  <path d="M8 28 Q24 10 40 28" stroke="#D97706" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+                  <path d="M16 24 Q24 18 32 24" stroke="#D97706" stroke-width="2" stroke-linecap="round" fill="none" opacity="0.6"/>
+                  <circle cx="24" cy="20" r="3" fill="#D97706" opacity="0.4"/>
+                </svg>
+              </div>
+              <div class="card__badges">
+                <span class="badge badge--gratuito">★ 100% Gratuito</span>
+                <span class="badge badge--ciclo">1 Año</span>
+              </div>
+            </div>
+            <div class="card__body">
+              <h3 class="card__title">Panadería</h3>
+              <p class="card__desc">Domina técnicas de panadería artesanal, pastelería básica y producción de panes tradicionales ayacuchanos y modernos.</p>
+            </div>
+            <div class="card__footer">
+              <span class="card__ciclo-tag">Auxiliar Técnico</span>
+              <button class="btn card__btn-detalle" data-carrera="panaderia"
+                aria-label="Ver detalles de Panadería" type="button">
+                Ver Detalles →
+              </button>
+            </div>
+            <div class="card__glow" aria-hidden="true"></div>
+          </article>
+
+          <!-- Card 3: Cuidado del Adulto Mayor -->
+          <article class="card" data-category="auxiliar" data-carrera="adultomayor"
+            style="--card-color:#C8006A; --card-soft:rgba(200,0,106,0.10);"
+            aria-label="Programa: Cuidado del Adulto Mayor">
+            <div class="card__header">
+              <div class="card__icon" style="background:var(--card-soft); border-color:var(--card-color)">
+                <svg viewBox="0 0 48 48" fill="none" aria-hidden="true">
+                  <circle cx="24" cy="13" r="7" stroke="#C8006A" stroke-width="2.5"/>
+                  <path d="M10 40c0-7.73 6.27-14 14-14s14 6.27 14 14" stroke="#C8006A" stroke-width="2.5" stroke-linecap="round"/>
+                  <path d="M24 30 l-4 4 6 6 8-10" stroke="#C8006A" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" opacity="0.7"/>
+                </svg>
+              </div>
+              <div class="card__badges">
+                <span class="badge badge--gratuito">★ 100% Gratuito</span>
+                <span class="badge badge--ciclo">1 Año</span>
+              </div>
+            </div>
+            <div class="card__body">
+              <h3 class="card__title">Cuidado del Adulto Mayor</h3>
+              <p class="card__desc">Brinda cuidados básicos de salud, asistencia personal y actividades de bienestar para el adulto mayor con calidez y profesionalismo.</p>
+            </div>
+            <div class="card__footer">
+              <span class="card__ciclo-tag">Auxiliar Técnico</span>
+              <button class="btn card__btn-detalle" data-carrera="adultomayor"
+                aria-label="Ver detalles de Cuidado del Adulto Mayor" type="button">
+                Ver Detalles →
+              </button>
+            </div>
+            <div class="card__glow" aria-hidden="true"></div>
+          </article>
+
+          <!-- Card 4: Mantenimiento de Casas -->
+          <article class="card" data-category="auxiliar" data-carrera="casas"
+            style="--card-color:#2563EB; --card-soft:rgba(37,99,235,0.10);"
+            aria-label="Programa: Mantenimiento de Casas">
+            <div class="card__header">
+              <div class="card__icon" style="background:var(--card-soft); border-color:var(--card-color)">
+                <svg viewBox="0 0 48 48" fill="none" aria-hidden="true">
+                  <path d="M6 22L24 6l18 16" stroke="#2563EB" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <rect x="14" y="22" width="20" height="18" rx="2" stroke="#2563EB" stroke-width="2.5"/>
+                  <path d="M32 32 l6-6 m0 6 l-6-6" stroke="#2563EB" stroke-width="2" stroke-linecap="round"/>
+                  <circle cx="32" cy="29" r="5" stroke="#2563EB" stroke-width="2" opacity="0.7"/>
+                </svg>
+              </div>
+              <div class="card__badges">
+                <span class="badge badge--gratuito">★ 100% Gratuito</span>
+                <span class="badge badge--ciclo">1 Año</span>
+              </div>
+            </div>
+            <div class="card__body">
+              <h3 class="card__title">Mantenimiento de Casas</h3>
+              <p class="card__desc">Aprende plomería básica, instalaciones eléctricas domiciliarias, pintura y carpintería para el mantenimiento del hogar.</p>
+            </div>
+            <div class="card__footer">
+              <span class="card__ciclo-tag">Auxiliar Técnico</span>
+              <button class="btn card__btn-detalle" data-carrera="casas"
+                aria-label="Ver detalles de Mantenimiento de Casas" type="button">
+                Ver Detalles →
+              </button>
+            </div>
+            <div class="card__glow" aria-hidden="true"></div>
+          </article>
+
+          <!-- ════════════════════════════════════════
+               CICLO TÉCNICO — 5 programas
+               ════════════════════════════════════════ -->
+
+          <!-- Card 5: Estilismo -->
+          <article class="card" data-category="tecnico" data-carrera="estilismo"
+            style="--card-color:#9333EA; --card-soft:rgba(147,51,234,0.10);"
+            aria-label="Programa: Estilismo">
+            <div class="card__header">
+              <div class="card__icon" style="background:var(--card-soft); border-color:var(--card-color)">
+                <svg viewBox="0 0 48 48" fill="none" aria-hidden="true">
+                  <circle cx="17" cy="17" r="7" stroke="#9333EA" stroke-width="2.5"/>
+                  <circle cx="31" cy="17" r="7" stroke="#9333EA" stroke-width="2.5"/>
+                  <line x1="24" y1="17" x2="24" y2="42" stroke="#9333EA" stroke-width="2.5" stroke-linecap="round"/>
+                  <line x1="17" y1="24" x2="31" y2="24" stroke="#9333EA" stroke-width="2" stroke-linecap="round" opacity="0.6"/>
+                </svg>
+              </div>
+              <div class="card__badges">
+                <span class="badge badge--gratuito">★ 100% Gratuito</span>
+                <span class="badge badge--ciclo badge--ciclo-tecnico">2 Años</span>
+              </div>
+            </div>
+            <div class="card__body">
+              <h3 class="card__title">Estilismo</h3>
+              <p class="card__desc">Corte, peinado, coloración y tratamientos capilares profesionales para damas y caballeros. ¡Crea tu propio negocio!</p>
+            </div>
+            <div class="card__footer">
+              <span class="card__ciclo-tag card__ciclo-tag--tecnico">Ciclo Técnico</span>
+              <button class="btn card__btn-detalle" data-carrera="estilismo"
+                aria-label="Ver detalles de Estilismo" type="button">
+                Ver Detalles →
+              </button>
+            </div>
+            <div class="card__glow" aria-hidden="true"></div>
+          </article>
+
+          <!-- Card 6: Mantenimiento Electrónico -->
+          <article class="card" data-category="tecnico" data-carrera="electronico"
+            style="--card-color:#0891B2; --card-soft:rgba(8,145,178,0.10);"
+            aria-label="Programa: Mantenimiento Electrónico">
+            <div class="card__header">
+              <div class="card__icon" style="background:var(--card-soft); border-color:var(--card-color)">
+                <svg viewBox="0 0 48 48" fill="none" aria-hidden="true">
+                  <rect x="8" y="16" width="32" height="20" rx="3" stroke="#0891B2" stroke-width="2.5"/>
+                  <line x1="18" y1="36" x2="16" y2="42" stroke="#0891B2" stroke-width="2.5" stroke-linecap="round"/>
+                  <line x1="30" y1="36" x2="32" y2="42" stroke="#0891B2" stroke-width="2.5" stroke-linecap="round"/>
+                  <line x1="12" y1="42" x2="36" y2="42" stroke="#0891B2" stroke-width="2.5" stroke-linecap="round"/>
+                  <path d="M20 22 l3 3 6-7" stroke="#0891B2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <circle cx="36" cy="10" r="4" fill="#0891B2" opacity="0.3" stroke="#0891B2" stroke-width="2"/>
+                  <line x1="36" y1="6" x2="36" y2="4" stroke="#0891B2" stroke-width="1.5" stroke-linecap="round"/>
+                  <line x1="39" y1="7" x2="41" y2="5" stroke="#0891B2" stroke-width="1.5" stroke-linecap="round"/>
+                  <line x1="40" y1="10" x2="42" y2="10" stroke="#0891B2" stroke-width="1.5" stroke-linecap="round"/>
+                </svg>
+              </div>
+              <div class="card__badges">
+                <span class="badge badge--gratuito">★ 100% Gratuito</span>
+                <span class="badge badge--ciclo badge--ciclo-tecnico">2 Años</span>
+              </div>
+            </div>
+            <div class="card__body">
+              <h3 class="card__title">Mantenimiento Electrónico</h3>
+              <p class="card__desc">Repara equipos electrónicos, celulares y electrodomésticos. Alta demanda laboral en Ayacucho y todo el Perú.</p>
+            </div>
+            <div class="card__footer">
+              <span class="card__ciclo-tag card__ciclo-tag--tecnico">Ciclo Técnico</span>
+              <button class="btn card__btn-detalle" data-carrera="electronico"
+                aria-label="Ver detalles de Mantenimiento Electrónico" type="button">
+                Ver Detalles →
+              </button>
+            </div>
+            <div class="card__glow" aria-hidden="true"></div>
+          </article>
+
+          <!-- Card 7: Confección de Prendas -->
+          <article class="card" data-category="tecnico" data-carrera="confeccion"
+            style="--card-color:#059669; --card-soft:rgba(5,150,105,0.10);"
+            aria-label="Programa: Confección de Prendas">
+            <div class="card__header">
+              <div class="card__icon" style="background:var(--card-soft); border-color:var(--card-color)">
+                <svg viewBox="0 0 48 48" fill="none" aria-hidden="true">
+                  <path d="M16 8 L10 20 L18 20 L18 40 L30 40 L30 20 L38 20 L32 8" stroke="#059669" stroke-width="2.5" stroke-linejoin="round"/>
+                  <line x1="16" y1="8" x2="32" y2="8" stroke="#059669" stroke-width="2.5" stroke-linecap="round"/>
+                  <path d="M22 14 Q24 12 26 14" stroke="#059669" stroke-width="2" stroke-linecap="round" fill="none"/>
+                  <circle cx="24" cy="14" r="2" fill="#059669" opacity="0.5"/>
+                </svg>
+              </div>
+              <div class="card__badges">
+                <span class="badge badge--gratuito">★ 100% Gratuito</span>
+                <span class="badge badge--ciclo badge--ciclo-tecnico">2 Años</span>
+              </div>
+            </div>
+            <div class="card__body">
+              <h3 class="card__title">Confección de Prendas</h3>
+              <p class="card__desc">Diseña, corta y confecciona prendas de vestir con máquinas industriales. Emprende tu taller o trabaja en la industria textil.</p>
+            </div>
+            <div class="card__footer">
+              <span class="card__ciclo-tag card__ciclo-tag--tecnico">Ciclo Técnico</span>
+              <button class="btn card__btn-detalle" data-carrera="confeccion"
+                aria-label="Ver detalles de Confección de Prendas" type="button">
+                Ver Detalles →
+              </button>
+            </div>
+            <div class="card__glow" aria-hidden="true"></div>
+          </article>
+
+          <!-- Card 8: Soporte Técnico -->
+          <article class="card" data-category="tecnico" data-carrera="soporte"
+            style="--card-color:#1D4ED8; --card-soft:rgba(29,78,216,0.10);"
+            aria-label="Programa: Soporte Técnico">
+            <div class="card__header">
+              <div class="card__icon" style="background:var(--card-soft); border-color:var(--card-color)">
+                <svg viewBox="0 0 48 48" fill="none" aria-hidden="true">
+                  <rect x="6" y="10" width="36" height="24" rx="3" stroke="#1D4ED8" stroke-width="2.5"/>
+                  <line x1="16" y1="38" x2="32" y2="38" stroke="#1D4ED8" stroke-width="2.5" stroke-linecap="round"/>
+                  <line x1="24" y1="34" x2="24" y2="38" stroke="#1D4ED8" stroke-width="2.5" stroke-linecap="round"/>
+                  <path d="M18 22 h4 l2-5 3 10 2-5 h5" stroke="#1D4ED8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <div class="card__badges">
+                <span class="badge badge--gratuito">★ 100% Gratuito</span>
+                <span class="badge badge--ciclo badge--ciclo-tecnico">2 Años</span>
+              </div>
+            </div>
+            <div class="card__body">
+              <h3 class="card__title">Soporte Técnico</h3>
+              <p class="card__desc">Mantenimiento de PCs, instalación de software, redes básicas y soporte a usuarios. Carrera con alta empleabilidad.</p>
+            </div>
+            <div class="card__footer">
+              <span class="card__ciclo-tag card__ciclo-tag--tecnico">Ciclo Técnico</span>
+              <button class="btn card__btn-detalle" data-carrera="soporte"
+                aria-label="Ver detalles de Soporte Técnico" type="button">
+                Ver Detalles →
+              </button>
+            </div>
+            <div class="card__glow" aria-hidden="true"></div>
+          </article>
+
+          <!-- Card 9: Apoyo Administrativo -->
+          <article class="card" data-category="tecnico" data-carrera="administrativo"
+            style="--card-color:#7C3AED; --card-soft:rgba(124,58,237,0.10);"
+            aria-label="Programa: Apoyo Administrativo">
+            <div class="card__header">
+              <div class="card__icon" style="background:var(--card-soft); border-color:var(--card-color)">
+                <svg viewBox="0 0 48 48" fill="none" aria-hidden="true">
+                  <rect x="10" y="6" width="28" height="36" rx="3" stroke="#7C3AED" stroke-width="2.5"/>
+                  <line x1="16" y1="16" x2="32" y2="16" stroke="#7C3AED" stroke-width="2" stroke-linecap="round"/>
+                  <line x1="16" y1="22" x2="32" y2="22" stroke="#7C3AED" stroke-width="2" stroke-linecap="round"/>
+                  <line x1="16" y1="28" x2="26" y2="28" stroke="#7C3AED" stroke-width="2" stroke-linecap="round"/>
+                  <circle cx="34" cy="36" r="6" fill="white" stroke="#7C3AED" stroke-width="2"/>
+                  <path d="M31 36 l2 2 4-4" stroke="#7C3AED" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <div class="card__badges">
+                <span class="badge badge--gratuito">★ 100% Gratuito</span>
+                <span class="badge badge--ciclo badge--ciclo-tecnico">2 Años</span>
+              </div>
+            </div>
+            <div class="card__body">
+              <h3 class="card__title">Apoyo Administrativo</h3>
+              <p class="card__desc">Contabilidad básica, gestión documental, digitación y atención al cliente. Indispensable en toda empresa u oficina pública.</p>
+            </div>
+            <div class="card__footer">
+              <span class="card__ciclo-tag card__ciclo-tag--tecnico">Ciclo Técnico</span>
+              <button class="btn card__btn-detalle" data-carrera="administrativo"
+                aria-label="Ver detalles de Apoyo Administrativo" type="button">
+                Ver Detalles →
+              </button>
+            </div>
+            <div class="card__glow" aria-hidden="true"></div>
+          </article>
+
+        </div><!-- /.carreras-grid -->
+
+        <!-- ── Mensaje de sin resultados ──────────────────────── -->
+        <div class="carreras-empty" id="carreras-empty" aria-live="assertive" hidden>
+          <span aria-hidden="true">🔍</span>
+          <p>No se encontraron programas para este filtro.</p>
+        </div>
+
+      </div><!-- /.section__container -->
+    </section><!-- /#carreras -->
+
+    <!-- ============================================================
+         MODAL DINÁMICO: Detalle de Carrera
+         Se llena con JavaScript según la carrera seleccionada.
+         ============================================================ -->
+    <div class="modal-overlay" id="modal-overlay"
+      role="dialog" aria-modal="true" aria-hidden="true"
+      aria-labelledby="modal-carrera-titulo">
+
+      <div class="modal" id="modal" role="document">
+
+        <!-- Barra de color superior (se actualiza con JS) -->
+        <div class="modal__color-bar" id="modal-color-bar" aria-hidden="true"></div>
+
+        <!-- Botón cerrar -->
+        <button class="modal__close" id="modal-close-btn"
+          type="button" aria-label="Cerrar ventana de detalles">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+            <path d="M4 4l12 12M16 4L4 16" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/>
+          </svg>
+        </button>
+
+        <!-- Encabezado del modal -->
+        <div class="modal__header">
+          <div class="modal__icon-wrap" id="modal-icon-wrap" aria-hidden="true"></div>
+          <div class="modal__header-text">
+            <span class="modal__ciclo-badge" id="modal-ciclo-badge"></span>
+            <h3 class="modal__title" id="modal-carrera-titulo">Cargando...</h3>
+            <span class="modal__duracion" id="modal-duracion"></span>
+          </div>
+        </div>
+
+        <!-- Cuerpo del modal -->
+        <div class="modal__body">
+          <p class="modal__descripcion" id="modal-descripcion"></p>
+
+          <div class="modal__section">
+            <h4 class="modal__section-title">
+              <span aria-hidden="true">📷</span> Galería del Taller
+            </h4>
+            <div class="modal__galeria" id="modal-galeria"></div>
+          </div>
+
+          <div class="modal__section">
+            <h4 class="modal__section-title">
+              <span aria-hidden="true">📋</span> Requisitos de Ingreso
+            </h4>
+            <ul class="modal__lista" id="modal-requisitos" role="list"></ul>
+          </div>
+
+          <div class="modal__section">
+            <h4 class="modal__section-title">
+              <span aria-hidden="true">🕐</span> Turnos Disponibles
+            </h4>
+            <div class="modal__turnos" id="modal-turnos"></div>
+          </div>
+
+          <!-- Badge Gratuito grande -->
+          <div class="modal__gratuito-banner" aria-label="Programa completamente gratuito">
+            <span aria-hidden="true">★</span>
+            <span>Matrícula y enseñanza <strong>100% Gratuita</strong> — Institución Pública</span>
+          </div>
+        </div>
+
+        <!-- Pie del modal -->
+        <div class="modal__footer">
+          <a href="#requisitos" class="btn btn--cta btn--cta-modal" id="modal-cta-btn"
+            aria-label="Ir a inscripción">
+            <span class="btn__icon" aria-hidden="true">✦</span>
+            ¡Inscríbete Ahora!
+          </a>
+          <button class="btn btn--ghost" type="button" id="modal-cerrar-ghost-btn">
+            Cerrar
+          </button>
+        </div>
+
+      </div><!-- /.modal -->
+    </div><!-- /.modal-overlay -->
+
+    <!-- ============================================================
+         COMPONENTE 3: REQUISITOS E INSCRIPCIÓN
+         ============================================================ -->
+    <section id="requisitos" class="section inscripcion-section" aria-labelledby="requisitos-title">
+      <div class="section__container">
+
+        <!-- ── Encabezado ──────────────────────────────────────── -->
+        <div class="section__header">
+          <span class="section__eyebrow" aria-hidden="true">✦ Acceso Gratuito</span>
+          <h2 id="requisitos-title" class="section__title">
+            Requisitos e <span class="section__title-highlight">Inscripción</span>
+          </h2>
+          <p class="section__subtitle">
+            Todo lo que necesitas saber para unirte a nuestra comunidad educativa.
+            Sin costos, sin barreras.
+          </p>
+        </div>
+
+        <!-- ── Layout de dos columnas (acordeón + formulario) ── -->
+        <div class="inscripcion-layout">
+
+          <!-- ────── COLUMNA IZQUIERDA: Acordeón FAQ ────────── -->
+          <div class="faq-column">
+            <h3 class="faq-column__title">Preguntas Frecuentes</h3>
+
+            <div class="accordion" id="faq-accordion" role="list">
+
+              <!-- Item 1: Edad mínima -->
+              <div class="accordion__item" role="listitem">
+                <button class="accordion__trigger" type="button"
+                  aria-expanded="false" aria-controls="faq-1-panel" id="faq-1-btn">
+                  <span class="accordion__icon" aria-hidden="true">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                      <circle cx="10" cy="10" r="8" stroke="#C8006A" stroke-width="1.8"/>
+                      <text x="10" y="14" text-anchor="middle" font-size="11" fill="#C8006A" font-weight="bold">14</text>
+                    </svg>
+                  </span>
+                  <span class="accordion__question">¿Cuál es la edad mínima para inscribirme?</span>
+                  <span class="accordion__chevron" aria-hidden="true">
+                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
+                      <path d="M4 6l5 5 5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </span>
+                </button>
+                <div class="accordion__panel" id="faq-1-panel" role="region" aria-labelledby="faq-1-btn" hidden>
+                  <div class="accordion__content">
+                    <p>La edad mínima de ingreso es <strong>14 años cumplidos</strong> para el Ciclo Auxiliar Técnico. Para el Ciclo Técnico (2 años) se requiere mínimo <strong>16 años</strong>. No hay límite de edad máxima — ¡nunca es tarde para aprender!</p>
+                    <div class="faq-highlight">
+                      <span aria-hidden="true">ℹ️</span>
+                      Menores de 18 años deben presentar autorización firmada por padre o tutor.
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Item 2: Gratuidad -->
+              <div class="accordion__item" role="listitem">
+                <button class="accordion__trigger" type="button"
+                  aria-expanded="false" aria-controls="faq-2-panel" id="faq-2-btn">
+                  <span class="accordion__icon" aria-hidden="true">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                      <circle cx="10" cy="10" r="8" stroke="#F5C200" stroke-width="1.8" fill="rgba(245,194,0,0.1)"/>
+                      <path d="M7 10l2 2 4-4" stroke="#D97706" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </span>
+                  <span class="accordion__question">¿La enseñanza es realmente 100% gratuita?</span>
+                  <span class="accordion__chevron" aria-hidden="true">
+                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
+                      <path d="M4 6l5 5 5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </span>
+                </button>
+                <div class="accordion__panel" id="faq-2-panel" role="region" aria-labelledby="faq-2-btn" hidden>
+                  <div class="accordion__content">
+                    <p><strong>Sí, completamente gratuita.</strong> El CETPRO Joaquín López Antay es una institución educativa pública dependiente del Ministerio de Educación del Perú. No se cobra matrícula, pensión mensual ni ningún tipo de cuota.</p>
+                    <div class="faq-highlight faq-highlight--gold">
+                      <span aria-hidden="true">★</span>
+                      Solo debes cubrir el costo de tus materiales de práctica personales, según la especialidad.
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Item 3: Documentos -->
+              <div class="accordion__item" role="listitem">
+                <button class="accordion__trigger" type="button"
+                  aria-expanded="false" aria-controls="faq-3-panel" id="faq-3-btn">
+                  <span class="accordion__icon" aria-hidden="true">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                      <rect x="3" y="2" width="14" height="16" rx="2" stroke="#2563EB" stroke-width="1.8"/>
+                      <line x1="6" y1="7" x2="14" y2="7" stroke="#2563EB" stroke-width="1.5" stroke-linecap="round"/>
+                      <line x1="6" y1="10" x2="14" y2="10" stroke="#2563EB" stroke-width="1.5" stroke-linecap="round"/>
+                      <line x1="6" y1="13" x2="10" y2="13" stroke="#2563EB" stroke-width="1.5" stroke-linecap="round"/>
+                    </svg>
+                  </span>
+                  <span class="accordion__question">¿Qué documentos necesito presentar?</span>
+                  <span class="accordion__chevron" aria-hidden="true">
+                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
+                      <path d="M4 6l5 5 5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </span>
+                </button>
+                <div class="accordion__panel" id="faq-3-panel" role="region" aria-labelledby="faq-3-btn" hidden>
+                  <div class="accordion__content">
+                    <ul class="faq-list">
+                      <li><strong>DNI original y 1 copia simple</strong> (legible)</li>
+                      <li><strong>2 fotografías tamaño carné</strong> (fondo blanco, recientes)</li>
+                      <li><strong>Certificado de estudios</strong> (primaria o secundaria según carrera)</li>
+                      <li><strong>Certificado de salud</strong> (para carreras de salud y alimentación)</li>
+                      <li>Autorización del tutor <em>(solo para menores de 18 años)</em></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Item 4: Período de matrícula -->
+              <div class="accordion__item" role="listitem">
+                <button class="accordion__trigger" type="button"
+                  aria-expanded="false" aria-controls="faq-4-panel" id="faq-4-btn">
+                  <span class="accordion__icon" aria-hidden="true">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                      <rect x="2" y="4" width="16" height="14" rx="2" stroke="#059669" stroke-width="1.8"/>
+                      <line x1="6" y1="2" x2="6" y2="6" stroke="#059669" stroke-width="1.8" stroke-linecap="round"/>
+                      <line x1="14" y1="2" x2="14" y2="6" stroke="#059669" stroke-width="1.8" stroke-linecap="round"/>
+                      <line x1="2" y1="9" x2="18" y2="9" stroke="#059669" stroke-width="1.5"/>
+                    </svg>
+                  </span>
+                  <span class="accordion__question">¿Cuándo son los períodos de matrícula?</span>
+                  <span class="accordion__chevron" aria-hidden="true">
+                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
+                      <path d="M4 6l5 5 5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </span>
+                </button>
+                <div class="accordion__panel" id="faq-4-panel" role="region" aria-labelledby="faq-4-btn" hidden>
+                  <div class="accordion__content">
+                    <p>Las matrículas se realizan <strong>dos veces al año</strong>:</p>
+                    <div class="faq-periodos">
+                      <div class="faq-periodo">
+                        <strong>Semestre I</strong>
+                        <span>Marzo – Abril</span>
+                      </div>
+                      <div class="faq-periodo">
+                        <strong>Semestre II</strong>
+                        <span>Agosto – Septiembre</span>
+                      </div>
+                    </div>
+                    <p style="margin-top:0.75rem">Acércate a nuestra institución en el horario de atención: <strong>Lunes a Viernes de 8:00 a 17:00 hrs.</strong></p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Item 5: Turnos y trabajo -->
+              <div class="accordion__item" role="listitem">
+                <button class="accordion__trigger" type="button"
+                  aria-expanded="false" aria-controls="faq-5-panel" id="faq-5-btn">
+                  <span class="accordion__icon" aria-hidden="true">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                      <circle cx="10" cy="10" r="8" stroke="#9333EA" stroke-width="1.8"/>
+                      <polyline points="10,5 10,10 13,13" stroke="#9333EA" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </span>
+                  <span class="accordion__question">¿Puedo estudiar si ya tengo trabajo o familia?</span>
+                  <span class="accordion__chevron" aria-hidden="true">
+                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
+                      <path d="M4 6l5 5 5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </span>
+                </button>
+                <div class="accordion__panel" id="faq-5-panel" role="region" aria-labelledby="faq-5-btn" hidden>
+                  <div class="accordion__content">
+                    <p>¡Por supuesto! Ofrecemos <strong>tres turnos de estudio</strong> para adaptarnos a tu rutina:</p>
+                    <div class="faq-turnos">
+                      <span class="turno-chip">🌅 Mañana (7:00 – 13:00)</span>
+                      <span class="turno-chip">☀️ Tarde (14:00 – 19:00)</span>
+                      <span class="turno-chip">🌙 Noche (19:00 – 22:00)</span>
+                    </div>
+                    <p style="margin-top:0.75rem">Consulta disponibilidad de turnos para tu carrera de interés en secretaría.</p>
+                  </div>
+                </div>
+              </div>
+
+            </div><!-- /.accordion -->
+          </div><!-- /.faq-column -->
+
+          <!-- ────── COLUMNA DERECHA: Formulario de Inscripción ── -->
+          <div class="form-column">
+            <div class="form-wrap" id="form-wrap">
+
+              <div class="form-wrap__header">
+                <div class="form-wrap__icon" aria-hidden="true">
+                  <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
+                    <path d="M14 3 L25 9 L25 19 L14 25 L3 19 L3 9 Z" stroke="#C8006A" stroke-width="1.8" fill="rgba(200,0,106,0.07)"/>
+                    <path d="M9 14l3 3 7-7" stroke="#C8006A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </div>
+                <div>
+                  <h3 class="form-wrap__title">Solicitud de Inscripción</h3>
+                  <p class="form-wrap__subtitle">Completa el formulario y nos comunicaremos contigo pronto.</p>
+                </div>
+              </div>
+
+              <!-- Formulario principal -->
+              <form class="inscripcion-form" id="inscripcion-form" novalidate aria-label="Formulario de inscripción">
+
+                <!-- Fila 1: Nombre completo -->
+                <div class="form-group" id="fg-nombre">
+                  <label class="form-label" for="f-nombre">
+                    Nombre Completo <span class="form-required" aria-label="requerido">*</span>
+                  </label>
+                  <input
+                    type="text" id="f-nombre" name="nombre"
+                    class="form-input" placeholder="Ej. María Quispe Huamán"
+                    autocomplete="name" required maxlength="80"
+                    aria-describedby="fg-nombre-error"
+                  />
+                  <span class="form-error" id="fg-nombre-error" role="alert" aria-live="polite"></span>
+                </div>
+
+                <!-- Fila 2: DNI -->
+                <div class="form-group" id="fg-dni">
+                  <label class="form-label" for="f-dni">
+                    N.° DNI <span class="form-required" aria-label="requerido">*</span>
+                  </label>
+                  <input
+                    type="text" id="f-dni" name="dni"
+                    class="form-input" placeholder="12345678"
+                    inputmode="numeric" maxlength="8" required
+                    pattern="\d{8}" aria-describedby="fg-dni-error"
+                  />
+                  <span class="form-error" id="fg-dni-error" role="alert" aria-live="polite"></span>
+                </div>
+
+                <!-- Fila 3: Teléfono -->
+                <div class="form-group" id="fg-telefono">
+                  <label class="form-label" for="f-telefono">
+                    Teléfono / Celular <span class="form-required" aria-label="requerido">*</span>
+                  </label>
+                  <input
+                    type="tel" id="f-telefono" name="telefono"
+                    class="form-input" placeholder="987 654 321"
+                    autocomplete="tel" required maxlength="12"
+                    aria-describedby="fg-telefono-error"
+                  />
+                  <span class="form-error" id="fg-telefono-error" role="alert" aria-live="polite"></span>
+                </div>
+
+                <!-- Fila 4: Correo electrónico -->
+                <div class="form-group" id="fg-email">
+                  <label class="form-label" for="f-email">
+                    Correo Electrónico <span class="form-optional">(opcional)</span>
+                  </label>
+                  <input
+                    type="email" id="f-email" name="email"
+                    class="form-input" placeholder="ejemplo@correo.com"
+                    autocomplete="email" maxlength="80"
+                    aria-describedby="fg-email-error"
+                  />
+                  <span class="form-error" id="fg-email-error" role="alert" aria-live="polite"></span>
+                </div>
+
+                <!-- Fila 5: Carrera de interés -->
+                <div class="form-group" id="fg-carrera">
+                  <label class="form-label" for="f-carrera">
+                    Carrera de Interés <span class="form-required" aria-label="requerido">*</span>
+                  </label>
+                  <div class="form-select-wrap">
+                    <select id="f-carrera" name="carrera" class="form-select" required
+                      aria-describedby="fg-carrera-error">
+                      <option value="" disabled selected>— Selecciona una carrera —</option>
+                      <optgroup label="Ciclo Auxiliar Técnico (1 Año)">
+                        <option value="gastronomia">Servicio Básico Gastronómico</option>
+                        <option value="panaderia">Panadería</option>
+                        <option value="adultomayor">Cuidado del Adulto Mayor</option>
+                        <option value="casas">Mantenimiento de Casas</option>
+                      </optgroup>
+                      <optgroup label="Ciclo Técnico (2 Años)">
+                        <option value="estilismo">Estilismo</option>
+                        <option value="electronico">Mantenimiento Electrónico</option>
+                        <option value="confeccion">Confección de Prendas</option>
+                        <option value="soporte">Soporte Técnico</option>
+                        <option value="administrativo">Apoyo Administrativo</option>
+                      </optgroup>
+                    </select>
+                    <span class="form-select-arrow" aria-hidden="true">▾</span>
+                  </div>
+                  <span class="form-error" id="fg-carrera-error" role="alert" aria-live="polite"></span>
+                </div>
+
+                <!-- Fila 6: Turno preferido -->
+                <div class="form-group" id="fg-turno">
+                  <label class="form-label" for="f-turno">Turno Preferido</label>
+                  <div class="form-turno-group" role="group" aria-label="Selecciona tu turno preferido">
+                    <label class="turno-radio">
+                      <input type="radio" name="turno" value="manana" checked/>
+                      <span class="turno-radio__label">🌅 Mañana</span>
+                    </label>
+                    <label class="turno-radio">
+                      <input type="radio" name="turno" value="tarde"/>
+                      <span class="turno-radio__label">☀️ Tarde</span>
+                    </label>
+                    <label class="turno-radio">
+                      <input type="radio" name="turno" value="noche"/>
+                      <span class="turno-radio__label">🌙 Noche</span>
+                    </label>
+                  </div>
+                </div>
+
+                <!-- Fila 7: Mensaje adicional -->
+                <div class="form-group" id="fg-mensaje">
+                  <label class="form-label" for="f-mensaje">
+                    Mensaje Adicional <span class="form-optional">(opcional)</span>
+                  </label>
+                  <textarea
+                    id="f-mensaje" name="mensaje" class="form-textarea"
+                    placeholder="¿Tienes alguna pregunta o comentario para la secretaría?"
+                    rows="3" maxlength="400"
+                    aria-describedby="fg-mensaje-error"
+                  ></textarea>
+                  <span class="form-char-count" id="f-mensaje-count" aria-live="polite">0 / 400</span>
+                  <span class="form-error" id="fg-mensaje-error" role="alert" aria-live="polite"></span>
+                </div>
+
+                <!-- Aviso de privacidad -->
+                <p class="form-privacidad">
+                  <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+                    <path d="M7 1L12 3.5V7.5C12 10.3 9.5 12.5 7 13C4.5 12.5 2 10.3 2 7.5V3.5L7 1Z" stroke="#8A8A9A" stroke-width="1.2"/>
+                  </svg>
+                  Tus datos se envían por WhatsApp a la secretaría del CETPRO y solo se usan para tu inscripción.
+                </p>
+
+                <!-- Botón de envío: abre WhatsApp con los datos ya escritos -->
+                <button type="submit" class="btn btn--cta btn--submit btn--whatsapp" id="btn-submit-form">
+                  <svg width="20" height="20" aria-hidden="true"><use href="#i-wa"/></svg>
+                  Enviar por WhatsApp
+                </button>
+
+              </form><!-- /.inscripcion-form -->
+
+              <!-- ── Mensaje de Éxito ── -->
+              <div class="form-success" id="form-success" hidden aria-live="assertive" role="status">
+                <div class="form-success__icon" aria-hidden="true">
+                  <svg width="56" height="56" viewBox="0 0 56 56" fill="none">
+                    <circle cx="28" cy="28" r="26" fill="rgba(5,150,105,0.10)" stroke="#059669" stroke-width="2"/>
+                    <path d="M18 28l7 7 14-14" stroke="#059669" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </div>
+                <h3 class="form-success__title">¡Ya casi terminas!</h3>
+                <p class="form-success__msg">
+                  Gracias, <strong id="success-nombre"></strong>. Abrimos WhatsApp con tu solicitud para
+                  <strong id="success-carrera"></strong>. <strong>Presiona «Enviar» en WhatsApp</strong>
+                  para que la secretaría la reciba y se comunique contigo.
+                </p>
+                <a class="form-success__retry" id="success-reintentar" href="#" target="_blank" rel="noopener">
+                  ¿No se abrió WhatsApp? Toca aquí
+                </a>
+                <div class="form-success__info">
+                  <span aria-hidden="true">📞</span>
+                  También puedes llamar al <strong>(066) 402682</strong> o <strong>931410702</strong>
+                </div>
+                <button class="btn btn--ghost" id="btn-nueva-solicitud" type="button">
+                  Enviar otra solicitud
+                </button>
+              </div><!-- /.form-success -->
+
+            </div><!-- /.form-wrap -->
+          </div><!-- /.form-column -->
+
+        </div><!-- /.inscripcion-layout -->
+
+      </div>
+    </section><!-- /#requisitos -->
+
+
+    <!-- ============================================================
+         COMPONENTE 4: NOVEDADES — Facebook (publicaciones) y YouTube (videos)
+         Los enlaces se configuran en js/main.js (bloque CONFIGURACIÓN)
+         ============================================================ -->
+    <section id="redes" class="section redes-section" aria-labelledby="redes-title">
+      <div class="section__container">
+
+        <div class="section__header">
+          <span class="section__eyebrow" aria-hidden="true">✦ Novedades</span>
+          <h2 id="redes-title" class="section__title">
+            Mira lo que <span class="section__title-highlight">hacemos</span>
+          </h2>
+          <p class="section__subtitle">
+            Publicaciones, fotos de nuestros estudiantes y videos de los talleres. Síguenos para no perderte los anuncios de matrícula.
+          </p>
+        </div>
+
+        <div class="redes-grid">
+
+          <!-- Facebook: publicaciones recientes -->
+          <article class="red-card red-card--fb">
+            <header class="red-card__header">
+              <span class="red-card__logo" aria-hidden="true"><svg><use href="#i-fb"/></svg></span>
+              <div>
+                <h3 class="red-card__title">Facebook</h3>
+                <p class="red-card__sub">Publicaciones y anuncios</p>
+              </div>
+            </header>
+            <div class="red-card__media" id="fb-embed">
+              <!-- JS inserta aquí las últimas publicaciones de la página -->
+              <p class="red-card__placeholder">Cargando publicaciones…</p>
+            </div>
+            <a class="red-card__btn" data-red="facebook" href="https://www.facebook.com/cetprojla" target="_blank" rel="noopener noreferrer">
+              Ver todas las publicaciones →
+            </a>
+          </article>
+
+          <!-- YouTube: video destacado -->
+          <article class="red-card red-card--yt">
+            <header class="red-card__header">
+              <span class="red-card__logo" aria-hidden="true"><svg><use href="#i-yt"/></svg></span>
+              <div>
+                <h3 class="red-card__title">YouTube</h3>
+                <p class="red-card__sub">Videos de talleres y ferias</p>
+              </div>
+            </header>
+            <div class="red-card__media red-card__media--video" id="yt-embed">
+              <!-- JS inserta aquí el video destacado -->
+              <p class="red-card__placeholder">Pronto publicaremos aquí nuestro video destacado.</p>
+            </div>
+            <a class="red-card__btn" data-red="youtube" href="#" target="_blank" rel="noopener noreferrer">
+              Ver todos los videos →
+            </a>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         COMPONENTE 5: CONTACTO
+         ============================================================ -->
+    <section id="contacto" class="section contacto-section" aria-labelledby="contacto-title">
+      <div class="section__container">
+
+        <div class="section__header">
+          <span class="section__eyebrow" aria-hidden="true">✦ Estamos Aquí</span>
+          <h2 id="contacto-title" class="section__title">
+            Encuéntranos en <span class="section__title-highlight">Ayacucho</span>
+          </h2>
+          <p class="section__subtitle">Visítanos o comunícate por cualquiera de estos medios.</p>
+        </div>
+
+        <div class="contacto-grid">
+
+          <!-- Tarjeta: Dirección -->
+          <div class="contacto-card" aria-label="Dirección física">
+            <div class="contacto-card__icon" style="--c-accent:#E84A12; --c-soft:rgba(232,74,18,0.10)">
+              <svg width="28" height="28" viewBox="0 0 28 28" fill="none" aria-hidden="true">
+                <path d="M14 2C9.58 2 6 5.58 6 10c0 6.63 8 16 8 16s8-9.37 8-16c0-4.42-3.58-8-8-8z" stroke="#E84A12" stroke-width="1.8" fill="rgba(232,74,18,0.08)"/>
+                <circle cx="14" cy="10" r="3" stroke="#E84A12" stroke-width="1.8"/>
+              </svg>
+            </div>
+            <h3 class="contacto-card__title">Dirección</h3>
+            <p class="contacto-card__info">
+              Jr. Bellido N.° 771<br />
+              Ayacucho, Huamanga<br />
+              Ayacucho — Perú
+            </p>
+            <a href="https://maps.google.com/?q=Jr+Bellido+771+Ayacucho+Peru"
+              class="contacto-card__link" target="_blank" rel="noopener noreferrer"
+              aria-label="Ver en Google Maps">
+              Ver en el mapa →
+            </a>
+          </div>
+
+          <!-- Tarjeta: Teléfonos -->
+          <div class="contacto-card" aria-label="Teléfonos de contacto">
+            <div class="contacto-card__icon" style="--c-accent:#C8006A; --c-soft:rgba(200,0,106,0.10)">
+              <svg width="28" height="28" viewBox="0 0 28 28" fill="none" aria-hidden="true">
+                <path d="M8 4h4l2 5-2.5 1.5A16 16 0 0018 16.5L19.5 14l5 2v4a2 2 0 01-2 2C9.16 22 6 8.84 6 6a2 2 0 012-2z" stroke="#C8006A" stroke-width="1.8" stroke-linejoin="round" fill="rgba(200,0,106,0.08)"/>
+              </svg>
+            </div>
+            <h3 class="contacto-card__title">Teléfonos</h3>
+            <p class="contacto-card__info">
+              <a href="tel:+5166402682" class="contacto-card__tel">(066) 402-682</a>
+              <span class="contacto-card__tel-label">Fijo — Secretaría</span>
+              <a href="tel:+51931410702" class="contacto-card__tel">931 410 702</a>
+              <span class="contacto-card__tel-label">Celular — Dirección</span>
+            </p>
+          </div>
+
+          <!-- Tarjeta: Facebook -->
+          <div class="contacto-card contacto-card--fb" aria-label="Página de Facebook">
+            <div class="contacto-card__icon" style="--c-accent:#1877F2; --c-soft:rgba(24,119,242,0.10)">
+              <svg width="28" height="28" viewBox="0 0 28 28" fill="none" aria-hidden="true">
+                <circle cx="14" cy="14" r="12" fill="rgba(24,119,242,0.10)" stroke="#1877F2" stroke-width="1.8"/>
+                <path d="M17 9h-2a2 2 0 00-2 2v2H11v3h2v7h3v-7h2l.5-3H16v-2a.5.5 0 01.5-.5H17V9z" fill="#1877F2"/>
+              </svg>
+            </div>
+            <h3 class="contacto-card__title">Facebook Oficial</h3>
+            <p class="contacto-card__info">Síguenos para novedades, fotos de estudiantes y anuncios de matrícula.</p>
+            <a href="https://www.facebook.com/cetprojla" data-red="facebook" target="_blank" rel="noopener noreferrer"
+              class="contacto-card__link contacto-card__link--fb"
+              aria-label="Visitar página de Facebook del CETPRO">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="#1877F2" aria-hidden="true">
+                <path d="M24 12.07C24 5.41 18.63 0 12 0S0 5.41 0 12.07C0 18.1 4.39 23.1 10.13 24v-8.44H7.08v-3.49h3.04V9.41c0-3.02 1.79-4.69 4.53-4.69 1.31 0 2.68.24 2.68.24v2.97h-1.51c-1.49 0-1.95.93-1.95 1.89v2.26h3.32l-.53 3.49h-2.79V24C19.61 23.1 24 18.1 24 12.07z"/>
+              </svg>
+              @cetprojla — Ver página
+            </a>
+          </div>
+
+          <!-- Tarjeta: Horario de atención -->
+          <div class="contacto-card" aria-label="Horario de atención">
+            <div class="contacto-card__icon" style="--c-accent:#7C3AED; --c-soft:rgba(124,58,237,0.10)">
+              <svg width="28" height="28" viewBox="0 0 28 28" fill="none" aria-hidden="true">
+                <circle cx="14" cy="14" r="11" stroke="#7C3AED" stroke-width="1.8" fill="rgba(124,58,237,0.08)"/>
+                <polyline points="14,7 14,14 18,17" stroke="#7C3AED" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <h3 class="contacto-card__title">Horario de Atención</h3>
+            <p class="contacto-card__info">
+              <strong>Lunes a Viernes</strong><br />
+              8:00 a.m. – 1:00 p.m.<br />
+              2:00 p.m. – 5:00 p.m.
+            </p>
+            <span class="contacto-card__badge">Secretaría Abierta</span>
+          </div>
+
+        </div><!-- /.contacto-grid -->
+
+      </div>
+    </section><!-- /#contacto -->
+
+  </main>
+
+  <!-- ============================================================
+       FOOTER INSTITUCIONAL — Identidad Retablo Ayacuchano
+       ============================================================ -->
+  <footer class="footer" id="footer" role="contentinfo">
+
+    <!-- Barra decorativa floral superior -->
+    <div class="footer__floral-bar" aria-hidden="true">
+      <svg class="footer__floral-svg" viewBox="0 0 1440 24" fill="none" preserveAspectRatio="none">
+        <path d="M0 12 Q180 0 360 12 Q540 24 720 12 Q900 0 1080 12 Q1260 24 1440 12 L1440 24 L0 24Z"
+          fill="url(#floral-grad)"/>
+        <defs>
+          <linearGradient id="floral-grad" x1="0" y1="0" x2="1440" y2="0" gradientUnits="userSpaceOnUse">
+            <stop offset="0%" stop-color="#C8006A"/>
+            <stop offset="50%" stop-color="#E8001C"/>
+            <stop offset="100%" stop-color="#F5C200"/>
+          </linearGradient>
+        </defs>
+      </svg>
+    </div>
+
+    <div class="footer__body">
+      <div class="footer__container">
+
+        <!-- ── Columna 1: Marca institucional ── -->
+        <div class="footer__brand-col">
+          <!-- Logo SVG -->
+          <a href="#inicio" class="footer__logo" aria-label="Ir al inicio">
+            <svg width="48" height="48" viewBox="0 0 40 40" fill="none" aria-hidden="true">
+              <ellipse cx="20" cy="10" rx="5" ry="9" fill="#C8006A" opacity="0.9"/>
+              <ellipse cx="30" cy="20" rx="9" ry="5" fill="#E8001C" opacity="0.85"/>
+              <ellipse cx="20" cy="30" rx="5" ry="9" fill="#C8006A" opacity="0.9"/>
+              <ellipse cx="10" cy="20" rx="9" ry="5" fill="#E8001C" opacity="0.85"/>
+              <circle cx="20" cy="20" r="6" fill="#F5C200"/>
+              <circle cx="20" cy="20" r="3" fill="#C8006A"/>
+            </svg>
+            <div class="footer__logo-text">
+              <span class="footer__logo-name">CETPRO</span>
+              <span class="footer__logo-sub">Joaquín López Antay</span>
+            </div>
+          </a>
+          <p class="footer__tagline">
+            Formando profesionales técnicos con identidad ayacuchana desde hace décadas.
+            Educación pública, gratuita y de calidad.
+          </p>
+          <!-- Botón Facebook destacado -->
+          <a href="https://www.facebook.com/cetprojla" data-red="facebook" target="_blank" rel="noopener noreferrer"
+            class="footer__fb-btn" aria-label="Visitar nuestra página de Facebook">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="white" aria-hidden="true">
+              <path d="M24 12.07C24 5.41 18.63 0 12 0S0 5.41 0 12.07C0 18.1 4.39 23.1 10.13 24v-8.44H7.08v-3.49h3.04V9.41c0-3.02 1.79-4.69 4.53-4.69 1.31 0 2.68.24 2.68.24v2.97h-1.51c-1.49 0-1.95.93-1.95 1.89v2.26h3.32l-.53 3.49h-2.79V24C19.61 23.1 24 18.1 24 12.07z"/>
+            </svg>
+            Síguenos en Facebook
+          </a>
+          <a href="#" data-red="youtube" target="_blank" rel="noopener noreferrer"
+            class="footer__fb-btn footer__yt-btn" aria-label="Ver nuestro canal de YouTube">
+            <svg width="18" height="18" aria-hidden="true"><use href="#i-yt"/></svg>
+            Mira nuestros videos
+          </a>
+        </div>
+
+        <!-- ── Columna 2: Navegación rápida ── -->
+        <nav class="footer__nav-col" aria-label="Navegación del pie de página">
+          <h3 class="footer__col-title">
+            <span class="footer__col-title-accent" aria-hidden="true">✦</span>
+            Navegación
+          </h3>
+          <ul class="footer__nav-list" role="list">
+            <li><a href="#inicio" class="footer__nav-link">Inicio</a></li>
+            <li><a href="#carreras" class="footer__nav-link">Programas de Estudio</a></li>
+            <li><a href="#requisitos" class="footer__nav-link">Requisitos e Inscripción</a></li>
+            <li><a href="#contacto" class="footer__nav-link">Contacto</a></li>
+          </ul>
+        </nav>
+
+        <!-- ── Columna 3: Carreras rápidas ── -->
+        <div class="footer__carreras-col">
+          <h3 class="footer__col-title">
+            <span class="footer__col-title-accent" aria-hidden="true">✦</span>
+            Carreras
+          </h3>
+          <ul class="footer__nav-list" role="list">
+            <li><a href="#carreras" class="footer__nav-link">Gastronomía</a></li>
+            <li><a href="#carreras" class="footer__nav-link">Panadería</a></li>
+            <li><a href="#carreras" class="footer__nav-link">Estilismo</a></li>
+            <li><a href="#carreras" class="footer__nav-link">Soporte Técnico</a></li>
+            <li><a href="#carreras" class="footer__nav-link">Confección de Prendas</a></li>
+            <li><a href="#carreras" class="footer__nav-link">Ver todas →</a></li>
+          </ul>
+        </div>
+
+        <!-- ── Columna 4: Contacto ── -->
+        <address class="footer__contact-col" aria-label="Información de contacto">
+          <h3 class="footer__col-title">
+            <span class="footer__col-title-accent" aria-hidden="true">✦</span>
+            Contacto
+          </h3>
+          <ul class="footer__contact-list" role="list">
+            <li class="footer__contact-item">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                <path d="M8 1C5.24 1 3 3.24 3 6c0 3.75 5 9 5 9s5-5.25 5-9c0-2.76-2.24-5-5-5z" stroke="#F5C200" stroke-width="1.3"/>
+                <circle cx="8" cy="6" r="2" stroke="#F5C200" stroke-width="1.3"/>
+              </svg>
+              <span>Jr. Bellido N.° 771<br/>Ayacucho, Perú</span>
+            </li>
+            <li class="footer__contact-item">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                <path d="M4.5 2.5h2l1 3-1.5 1A9 9 0 0011 11l1-1.5 3 1v2A1 1 0 0114 13.5C7.1 13.5 2.5 8.9 2.5 2A1 1 0 013.5 1h1z" stroke="#F5C200" stroke-width="1.3" stroke-linejoin="round"/>
+              </svg>
+              <span>
+                <a href="tel:+5166402682" class="footer__tel">(066) 402-682</a><br/>
+                <a href="tel:+51931410702" class="footer__tel">931 410 702</a>
+              </span>
+            </li>
+            <li class="footer__contact-item">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                <circle cx="8" cy="8" r="6" stroke="#F5C200" stroke-width="1.3"/>
+                <polyline points="8,4 8,8 10,10" stroke="#F5C200" stroke-width="1.3" stroke-linecap="round"/>
+              </svg>
+              <span>Lun – Vie: 8:00 – 17:00 hrs.</span>
+            </li>
+          </ul>
+        </address>
+
+      </div><!-- /.footer__container -->
+    </div><!-- /.footer__body -->
+
+    <!-- ── Barra inferior del footer ── -->
+    <div class="footer__bottom">
+      <div class="footer__bottom-inner">
+        <p class="footer__copyright">
+          © <span id="anio">2026</span> CETPRO Joaquín López Antay · Ayacucho, Perú
+          · Institución Educativa Pública — <abbr title="Ministerio de Educación">MINEDU</abbr>
+        </p>
+        <p class="footer__credits">
+          Diseño Web: Servicio Social — Ingeniería de Sistemas
+          <span aria-hidden="true"> · 🌸</span>
+        </p>
+      </div>
+    </div>
+
+  </footer><!-- /footer -->
+
+  <!-- ── Botón flotante de WhatsApp (el número se configura en js/main.js) ── -->
+  <a class="wa-flotante" data-red="whatsapp" href="#" target="_blank" rel="noopener noreferrer"
+    aria-label="Escríbenos por WhatsApp">
+    <svg aria-hidden="true"><use href="#i-wa"/></svg>
+    <span class="wa-flotante__texto">¿Consultas?</span>
+  </a>
+
+  <!-- ── JavaScript Principal ──────────────────────────────────── -->
+  <script src="js/main.js?v=3" defer></script>
+
+</body>
+</html>

@@ -1,0 +1,22 @@
+FOTOS DE LAS CARRERAS
+=====================
+
+Coloca aquí las fotos con estos nombres exactos (minúsculas, sin tildes, formato .jpg).
+La foto -1 sale en la tarjeta de la carrera; las tres salen en "Ver Detalles".
+Si falta alguna, la página muestra "Foto próximamente" en su lugar.
+
+  gastronomia-1.jpg     gastronomia-2.jpg     gastronomia-3.jpg
+  panaderia-1.jpg       panaderia-2.jpg       panaderia-3.jpg
+  adultomayor-1.jpg     adultomayor-2.jpg     adultomayor-3.jpg
+  casas-1.jpg           casas-2.jpg           casas-3.jpg
+  estilismo-1.jpg       estilismo-2.jpg       estilismo-3.jpg
+  electronico-1.jpg     electronico-2.jpg     electronico-3.jpg
+  confeccion-1.jpg      confeccion-2.jpg      confeccion-3.jpg
+  soporte-1.jpg         soporte-2.jpg         soporte-3.jpg
+  administrativo-1.jpg  administrativo-2.jpg  administrativo-3.jpg
+
+Recomendaciones:
+- Horizontales, de unos 1200 x 750 px y menos de 300 KB cada una
+  (se pueden comprimir gratis en https://squoosh.app).
+- Si aparecen estudiantes, contar con su autorización
+  (y la de sus padres si son menores de edad).
