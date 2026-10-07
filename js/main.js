@@ -406,8 +406,8 @@ const CARRERAS_DATA = {
     nombre:      'Servicio Básico Gastronómico',
     ciclo:       'Ciclo Auxiliar Técnico',
     duracion:    '1 Año de estudio',
-    color:       '#E84A12',
-    colorSoft:   'rgba(232,74,18,0.10)',
+    color:       '#B84E0C',
+    colorSoft:   'rgba(184,78,12,0.10)',
     descripcion: 'Aprenderás técnicas profesionales de preparación de alimentos, gestión de cocina, manipulación higiénica de alimentos y atención al cliente en establecimientos gastronómicos. Perfecto para emprender tu propio negocio o trabajar en restaurantes y hoteles.',
     requisitos: [
       'Certificado de estudios primarios o secundarios',
@@ -423,8 +423,8 @@ const CARRERAS_DATA = {
     nombre:      'Panadería',
     ciclo:       'Ciclo Auxiliar Técnico',
     duracion:    '1 Año de estudio',
-    color:       '#D97706',
-    colorSoft:   'rgba(217,119,6,0.10)',
+    color:       '#9A6A00',
+    colorSoft:   'rgba(154,106,0,0.10)',
     descripcion: 'Domina técnicas de panadería artesanal e industrial, pastelería básica y producción de panes tradicionales ayacuchanos y modernos. Desarrolla las habilidades para abrir tu propia panadería o trabajar en la industria alimentaria.',
     requisitos: [
       'Certificado de estudios primarios completos',
@@ -440,8 +440,8 @@ const CARRERAS_DATA = {
     nombre:      'Cuidado del Adulto Mayor',
     ciclo:       'Ciclo Auxiliar Técnico',
     duracion:    '1 Año de estudio',
-    color:       '#C8006A',
-    colorSoft:   'rgba(200,0,106,0.10)',
+    color:       '#C0262D',
+    colorSoft:   'rgba(192,38,45,0.10)',
     descripcion: 'Adquiere las competencias para brindar cuidados básicos de salud, asistencia personal, movilización segura y actividades de bienestar y recreación para adultos mayores. Carrera con alta demanda en hogares, centros de reposo y servicios de salud.',
     requisitos: [
       'Secundaria completa (obligatorio)',
@@ -457,8 +457,8 @@ const CARRERAS_DATA = {
     nombre:      'Mantenimiento de Casas',
     ciclo:       'Ciclo Auxiliar Técnico',
     duracion:    '1 Año de estudio',
-    color:       '#2563EB',
-    colorSoft:   'rgba(37,99,235,0.10)',
+    color:       '#0A6C9E',
+    colorSoft:   'rgba(10,108,158,0.10)',
     descripcion: 'Aprende plomería básica, instalaciones eléctricas domiciliarias seguras, pintura de interiores y exteriores, y carpintería básica. Una formación práctica para trabajar de forma independiente o en empresas de construcción y mantenimiento.',
     requisitos: [
       'Certificado de estudios primarios',
@@ -473,8 +473,8 @@ const CARRERAS_DATA = {
     nombre:      'Estilismo',
     ciclo:       'Ciclo Técnico',
     duracion:    '2 Años de estudio',
-    color:       '#9333EA',
-    colorSoft:   'rgba(147,51,234,0.10)',
+    color:       '#1A7F26',
+    colorSoft:   'rgba(26,127,38,0.10)',
     descripcion: 'Formación completa en corte de cabello, peinados, coloración, tratamientos capilares, manicura y pedicura para damas y caballeros. Al egresar tendrás las herramientas para abrir tu propio salón de belleza o trabajar en centros estéticos reconocidos.',
     requisitos: [
       'Secundaria completa (obligatorio)',
@@ -490,8 +490,8 @@ const CARRERAS_DATA = {
     nombre:      'Mantenimiento Electrónico',
     ciclo:       'Ciclo Técnico',
     duracion:    '2 Años de estudio',
-    color:       '#0891B2',
-    colorSoft:   'rgba(8,145,178,0.10)',
+    color:       '#0A5F8C',
+    colorSoft:   'rgba(10,95,140,0.10)',
     descripcion: 'Aprende a diagnosticar y reparar equipos electrónicos: televisores, equipos de sonido, celulares y electrodomésticos. Incluye soldadura, lectura de circuitos y gestión de taller. Alta demanda laboral en Ayacucho y a nivel nacional.',
     requisitos: [
       'Secundaria completa (obligatorio)',
@@ -506,8 +506,8 @@ const CARRERAS_DATA = {
     nombre:      'Confección de Prendas',
     ciclo:       'Ciclo Técnico',
     duracion:    '2 Años de estudio',
-    color:       '#059669',
-    colorSoft:   'rgba(5,150,105,0.10)',
+    color:       '#B84E0C',
+    colorSoft:   'rgba(184,78,12,0.10)',
     descripcion: 'Diseña, traza, corta y confecciona prendas de vestir utilizando máquinas industriales de coser y overlook. Aprende patronaje, transformaciones y escalado. Ideal para emprender tu propio taller o insertarte en la industria textil local.',
     requisitos: [
       'Certificado de estudios primarios completos',
@@ -522,8 +522,8 @@ const CARRERAS_DATA = {
     nombre:      'Soporte Técnico',
     ciclo:       'Ciclo Técnico',
     duracion:    '2 Años de estudio',
-    color:       '#1D4ED8',
-    colorSoft:   'rgba(29,78,216,0.10)',
+    color:       '#0A6C9E',
+    colorSoft:   'rgba(10,108,158,0.10)',
     descripcion: 'Formación en mantenimiento preventivo y correctivo de computadoras, instalación de sistemas operativos y software, configuración de redes básicas y soporte a usuarios. Una de las carreras con mayor empleabilidad en el sector público y privado.',
     requisitos: [
       'Secundaria completa (obligatorio)',
@@ -539,8 +539,8 @@ const CARRERAS_DATA = {
     nombre:      'Apoyo Administrativo',
     ciclo:       'Ciclo Técnico',
     duracion:    '2 Años de estudio',
-    color:       '#7C3AED',
-    colorSoft:   'rgba(124,58,237,0.10)',
+    color:       '#1A7F26',
+    colorSoft:   'rgba(26,127,38,0.10)',
     descripcion: 'Capacitación en contabilidad básica, gestión y organización documental, digitación avanzada, atención al cliente y manejo de software de oficina (Word, Excel). Indispensable en toda empresa, municipalidad u oficina pública de Ayacucho.',
     requisitos: [
       'Secundaria completa (obligatorio)',
@@ -725,7 +725,7 @@ const ModalCarreras = (() => {
       elCicloBadge.style.background = esTecnico
         ? 'rgba(29,78,216,0.10)'
         : `${datos.color}15`;
-      elCicloBadge.style.color = esTecnico ? '#1D4ED8' : datos.color;
+      elCicloBadge.style.color = esTecnico ? '#0A5F8C' : datos.color;
     }
 
     // ── Título, duración, descripción ──

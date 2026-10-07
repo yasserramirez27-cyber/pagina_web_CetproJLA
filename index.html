@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="es">
 
 <head>
@@ -36,12 +36,11 @@
     rel="stylesheet" />
 
   <!-- ── Hoja de Estilos Principal ─────────────────────────── -->
-  <link rel="stylesheet" href="css/styles.css?v=3" />
-  <meta name="theme-color" content="#C8006A" />
+  <link rel="stylesheet" href="css/styles.css?v=6" />
+  <meta name="theme-color" content="#5BC0EB" />
 
   <!-- ── Favicon SVG inline (sin archivo externo) ─────────── -->
-  <link rel="icon"
-    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌸</text></svg>" />
+  <link rel="icon" href="img/logo.jpg" type="image/jpeg" />
 </head>
 
 <body>
@@ -61,16 +60,8 @@
 
       <!-- ── Logo + Identidad Institucional ──────────────────── -->
       <a href="#inicio" class="header__brand" aria-label="Ir al inicio — CETPRO Joaquín López Antay">
-        <!-- Ícono floral SVG (retablo, sin imagen externa) -->
         <span class="header__brand-icon" aria-hidden="true">
-          <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <ellipse cx="20" cy="10" rx="5" ry="9" fill="#C8006A" opacity="0.9"/>
-            <ellipse cx="30" cy="20" rx="9" ry="5" fill="#E8001C" opacity="0.85"/>
-            <ellipse cx="20" cy="30" rx="5" ry="9" fill="#C8006A" opacity="0.9"/>
-            <ellipse cx="10" cy="20" rx="9" ry="5" fill="#E8001C" opacity="0.85"/>
-            <circle cx="20" cy="20" r="6" fill="#F5C200"/>
-            <circle cx="20" cy="20" r="3" fill="#C8006A"/>
-          </svg>
+          <img src="img/logo.jpg" alt="" width="48" height="48" />
         </span>
         <!-- Nombre institucional -->
         <span class="header__brand-text">
@@ -161,16 +152,16 @@
         <button class="retablo-btn" id="retablo" type="button" aria-pressed="false"
           aria-label="Abrir o cerrar las puertas del retablo">
           <svg class="retablo" viewBox="0 0 300 340" role="img" aria-label="Ilustración de un retablo ayacuchano">
-            <rect width="300" height="340" rx="14" fill="#C8006A"/>
-            <rect x="14" y="14" width="272" height="312" rx="8" fill="#F5C200"/>
+            <rect width="300" height="340" rx="14" fill="#EC6E17"/>
+            <rect x="14" y="14" width="272" height="312" rx="8" fill="#F9BB23"/>
             <rect x="30" y="30" width="240" height="280" fill="#BFE3EA"/>
-            <circle cx="150" cy="96" r="30" fill="#F5C200"/>
-            <path d="M30 250 L100 150 L160 230 L210 170 L270 250 V310 H30Z" fill="#059669"/>
-            <rect x="120" y="248" width="56" height="62" fill="#F4F0EB"/><path d="M114 250 L148 218 L182 250Z" fill="#E8001C"/>
-            <circle cx="70" cy="278" r="9" fill="#C8006A"/><rect x="62" y="288" width="16" height="22" fill="#C8006A"/>
-            <circle cx="232" cy="278" r="9" fill="#1A1A2E"/><rect x="224" y="288" width="16" height="22" fill="#1A1A2E"/>
-            <g class="puerta puerta--izq"><rect x="30" y="30" width="120" height="280" fill="#E8001C"/><rect x="42" y="42" width="96" height="256" fill="none" stroke="#F5C200" stroke-width="4"/><circle cx="132" cy="170" r="6" fill="#F5C200"/></g>
-            <g class="puerta puerta--der"><rect x="150" y="30" width="120" height="280" fill="#1A1A2E"/><rect x="162" y="42" width="96" height="256" fill="none" stroke="#F5C200" stroke-width="4"/><circle cx="168" cy="170" r="6" fill="#F5C200"/></g>
+            <circle cx="150" cy="96" r="30" fill="#F9BB23"/>
+            <path d="M30 250 L100 150 L160 230 L210 170 L270 250 V310 H30Z" fill="#21992E"/>
+            <rect x="120" y="248" width="56" height="62" fill="#F4F0EB"/><path d="M114 250 L148 218 L182 250Z" fill="#C0262D"/>
+            <circle cx="70" cy="278" r="9" fill="#C0262D"/><rect x="62" y="288" width="16" height="22" fill="#C0262D"/>
+            <circle cx="232" cy="278" r="9" fill="#0A6C9E"/><rect x="224" y="288" width="16" height="22" fill="#0A6C9E"/>
+            <g class="puerta puerta--izq"><rect x="30" y="30" width="120" height="280" fill="#5BC0EB"/><rect x="42" y="42" width="96" height="256" fill="none" stroke="#F9BB23" stroke-width="4"/><circle cx="132" cy="170" r="6" fill="#F9BB23"/></g>
+            <g class="puerta puerta--der"><rect x="150" y="30" width="120" height="280" fill="#C0262D"/><rect x="162" y="42" width="96" height="256" fill="none" stroke="#F9BB23" stroke-width="4"/><circle cx="168" cy="170" r="6" fill="#F9BB23"/></g>
           </svg>
         </button>
       </div>
@@ -234,15 +225,15 @@
 
           <!-- Card 1: Servicio Básico Gastronómico -->
           <article class="card" data-category="auxiliar" data-carrera="gastronomia"
-            style="--card-color:#E84A12; --card-soft:rgba(232,74,18,0.10);"
+            style="--card-color:#B84E0C; --card-soft:rgba(184,78,12,0.10);"
             aria-label="Programa: Servicio Básico Gastronómico">
             <div class="card__header">
               <div class="card__icon" style="background:var(--card-soft); border-color:var(--card-color)">
                 <svg viewBox="0 0 48 48" fill="none" aria-hidden="true">
-                  <path d="M12 8v14a10 10 0 0020 0V8" stroke="#E84A12" stroke-width="2.5" stroke-linecap="round"/>
-                  <line x1="22" y1="8" x2="22" y2="26" stroke="#E84A12" stroke-width="2.5" stroke-linecap="round"/>
-                  <line x1="32" y1="8" x2="32" y2="40" stroke="#E84A12" stroke-width="2.5" stroke-linecap="round"/>
-                  <line x1="8" y1="40" x2="40" y2="40" stroke="#E84A12" stroke-width="2.5" stroke-linecap="round"/>
+                  <path d="M12 8v14a10 10 0 0020 0V8" stroke="#B84E0C" stroke-width="2.5" stroke-linecap="round"/>
+                  <line x1="22" y1="8" x2="22" y2="26" stroke="#B84E0C" stroke-width="2.5" stroke-linecap="round"/>
+                  <line x1="32" y1="8" x2="32" y2="40" stroke="#B84E0C" stroke-width="2.5" stroke-linecap="round"/>
+                  <line x1="8" y1="40" x2="40" y2="40" stroke="#B84E0C" stroke-width="2.5" stroke-linecap="round"/>
                 </svg>
               </div>
               <div class="card__badges">
@@ -266,15 +257,15 @@
 
           <!-- Card 2: Panadería -->
           <article class="card" data-category="auxiliar" data-carrera="panaderia"
-            style="--card-color:#D97706; --card-soft:rgba(217,119,6,0.10);"
+            style="--card-color:#9A6A00; --card-soft:rgba(154,106,0,0.10);"
             aria-label="Programa: Panadería">
             <div class="card__header">
               <div class="card__icon" style="background:var(--card-soft); border-color:var(--card-color)">
                 <svg viewBox="0 0 48 48" fill="none" aria-hidden="true">
-                  <ellipse cx="24" cy="28" rx="16" ry="10" stroke="#D97706" stroke-width="2.5"/>
-                  <path d="M8 28 Q24 10 40 28" stroke="#D97706" stroke-width="2.5" stroke-linecap="round" fill="none"/>
-                  <path d="M16 24 Q24 18 32 24" stroke="#D97706" stroke-width="2" stroke-linecap="round" fill="none" opacity="0.6"/>
-                  <circle cx="24" cy="20" r="3" fill="#D97706" opacity="0.4"/>
+                  <ellipse cx="24" cy="28" rx="16" ry="10" stroke="#9A6A00" stroke-width="2.5"/>
+                  <path d="M8 28 Q24 10 40 28" stroke="#9A6A00" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+                  <path d="M16 24 Q24 18 32 24" stroke="#9A6A00" stroke-width="2" stroke-linecap="round" fill="none" opacity="0.6"/>
+                  <circle cx="24" cy="20" r="3" fill="#9A6A00" opacity="0.4"/>
                 </svg>
               </div>
               <div class="card__badges">
@@ -298,14 +289,14 @@
 
           <!-- Card 3: Cuidado del Adulto Mayor -->
           <article class="card" data-category="auxiliar" data-carrera="adultomayor"
-            style="--card-color:#C8006A; --card-soft:rgba(200,0,106,0.10);"
+            style="--card-color:#C0262D; --card-soft:rgba(192,38,45,0.10);"
             aria-label="Programa: Cuidado del Adulto Mayor">
             <div class="card__header">
               <div class="card__icon" style="background:var(--card-soft); border-color:var(--card-color)">
                 <svg viewBox="0 0 48 48" fill="none" aria-hidden="true">
-                  <circle cx="24" cy="13" r="7" stroke="#C8006A" stroke-width="2.5"/>
-                  <path d="M10 40c0-7.73 6.27-14 14-14s14 6.27 14 14" stroke="#C8006A" stroke-width="2.5" stroke-linecap="round"/>
-                  <path d="M24 30 l-4 4 6 6 8-10" stroke="#C8006A" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" opacity="0.7"/>
+                  <circle cx="24" cy="13" r="7" stroke="#C0262D" stroke-width="2.5"/>
+                  <path d="M10 40c0-7.73 6.27-14 14-14s14 6.27 14 14" stroke="#C0262D" stroke-width="2.5" stroke-linecap="round"/>
+                  <path d="M24 30 l-4 4 6 6 8-10" stroke="#C0262D" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" opacity="0.7"/>
                 </svg>
               </div>
               <div class="card__badges">
@@ -329,15 +320,15 @@
 
           <!-- Card 4: Mantenimiento de Casas -->
           <article class="card" data-category="auxiliar" data-carrera="casas"
-            style="--card-color:#2563EB; --card-soft:rgba(37,99,235,0.10);"
+            style="--card-color:#0A6C9E; --card-soft:rgba(10,108,158,0.10);"
             aria-label="Programa: Mantenimiento de Casas">
             <div class="card__header">
               <div class="card__icon" style="background:var(--card-soft); border-color:var(--card-color)">
                 <svg viewBox="0 0 48 48" fill="none" aria-hidden="true">
-                  <path d="M6 22L24 6l18 16" stroke="#2563EB" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
-                  <rect x="14" y="22" width="20" height="18" rx="2" stroke="#2563EB" stroke-width="2.5"/>
-                  <path d="M32 32 l6-6 m0 6 l-6-6" stroke="#2563EB" stroke-width="2" stroke-linecap="round"/>
-                  <circle cx="32" cy="29" r="5" stroke="#2563EB" stroke-width="2" opacity="0.7"/>
+                  <path d="M6 22L24 6l18 16" stroke="#0A6C9E" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <rect x="14" y="22" width="20" height="18" rx="2" stroke="#0A6C9E" stroke-width="2.5"/>
+                  <path d="M32 32 l6-6 m0 6 l-6-6" stroke="#0A6C9E" stroke-width="2" stroke-linecap="round"/>
+                  <circle cx="32" cy="29" r="5" stroke="#0A6C9E" stroke-width="2" opacity="0.7"/>
                 </svg>
               </div>
               <div class="card__badges">
@@ -365,15 +356,15 @@
 
           <!-- Card 5: Estilismo -->
           <article class="card" data-category="tecnico" data-carrera="estilismo"
-            style="--card-color:#9333EA; --card-soft:rgba(147,51,234,0.10);"
+            style="--card-color:#1A7F26; --card-soft:rgba(26,127,38,0.10);"
             aria-label="Programa: Estilismo">
             <div class="card__header">
               <div class="card__icon" style="background:var(--card-soft); border-color:var(--card-color)">
                 <svg viewBox="0 0 48 48" fill="none" aria-hidden="true">
-                  <circle cx="17" cy="17" r="7" stroke="#9333EA" stroke-width="2.5"/>
-                  <circle cx="31" cy="17" r="7" stroke="#9333EA" stroke-width="2.5"/>
-                  <line x1="24" y1="17" x2="24" y2="42" stroke="#9333EA" stroke-width="2.5" stroke-linecap="round"/>
-                  <line x1="17" y1="24" x2="31" y2="24" stroke="#9333EA" stroke-width="2" stroke-linecap="round" opacity="0.6"/>
+                  <circle cx="17" cy="17" r="7" stroke="#1A7F26" stroke-width="2.5"/>
+                  <circle cx="31" cy="17" r="7" stroke="#1A7F26" stroke-width="2.5"/>
+                  <line x1="24" y1="17" x2="24" y2="42" stroke="#1A7F26" stroke-width="2.5" stroke-linecap="round"/>
+                  <line x1="17" y1="24" x2="31" y2="24" stroke="#1A7F26" stroke-width="2" stroke-linecap="round" opacity="0.6"/>
                 </svg>
               </div>
               <div class="card__badges">
@@ -397,20 +388,20 @@
 
           <!-- Card 6: Mantenimiento Electrónico -->
           <article class="card" data-category="tecnico" data-carrera="electronico"
-            style="--card-color:#0891B2; --card-soft:rgba(8,145,178,0.10);"
+            style="--card-color:#0A5F8C; --card-soft:rgba(10,95,140,0.10);"
             aria-label="Programa: Mantenimiento Electrónico">
             <div class="card__header">
               <div class="card__icon" style="background:var(--card-soft); border-color:var(--card-color)">
                 <svg viewBox="0 0 48 48" fill="none" aria-hidden="true">
-                  <rect x="8" y="16" width="32" height="20" rx="3" stroke="#0891B2" stroke-width="2.5"/>
-                  <line x1="18" y1="36" x2="16" y2="42" stroke="#0891B2" stroke-width="2.5" stroke-linecap="round"/>
-                  <line x1="30" y1="36" x2="32" y2="42" stroke="#0891B2" stroke-width="2.5" stroke-linecap="round"/>
-                  <line x1="12" y1="42" x2="36" y2="42" stroke="#0891B2" stroke-width="2.5" stroke-linecap="round"/>
-                  <path d="M20 22 l3 3 6-7" stroke="#0891B2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                  <circle cx="36" cy="10" r="4" fill="#0891B2" opacity="0.3" stroke="#0891B2" stroke-width="2"/>
-                  <line x1="36" y1="6" x2="36" y2="4" stroke="#0891B2" stroke-width="1.5" stroke-linecap="round"/>
-                  <line x1="39" y1="7" x2="41" y2="5" stroke="#0891B2" stroke-width="1.5" stroke-linecap="round"/>
-                  <line x1="40" y1="10" x2="42" y2="10" stroke="#0891B2" stroke-width="1.5" stroke-linecap="round"/>
+                  <rect x="8" y="16" width="32" height="20" rx="3" stroke="#0A5F8C" stroke-width="2.5"/>
+                  <line x1="18" y1="36" x2="16" y2="42" stroke="#0A5F8C" stroke-width="2.5" stroke-linecap="round"/>
+                  <line x1="30" y1="36" x2="32" y2="42" stroke="#0A5F8C" stroke-width="2.5" stroke-linecap="round"/>
+                  <line x1="12" y1="42" x2="36" y2="42" stroke="#0A5F8C" stroke-width="2.5" stroke-linecap="round"/>
+                  <path d="M20 22 l3 3 6-7" stroke="#0A5F8C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <circle cx="36" cy="10" r="4" fill="#0A5F8C" opacity="0.3" stroke="#0A5F8C" stroke-width="2"/>
+                  <line x1="36" y1="6" x2="36" y2="4" stroke="#0A5F8C" stroke-width="1.5" stroke-linecap="round"/>
+                  <line x1="39" y1="7" x2="41" y2="5" stroke="#0A5F8C" stroke-width="1.5" stroke-linecap="round"/>
+                  <line x1="40" y1="10" x2="42" y2="10" stroke="#0A5F8C" stroke-width="1.5" stroke-linecap="round"/>
                 </svg>
               </div>
               <div class="card__badges">
@@ -434,15 +425,15 @@
 
           <!-- Card 7: Confección de Prendas -->
           <article class="card" data-category="tecnico" data-carrera="confeccion"
-            style="--card-color:#059669; --card-soft:rgba(5,150,105,0.10);"
+            style="--card-color:#B84E0C; --card-soft:rgba(184,78,12,0.10);"
             aria-label="Programa: Confección de Prendas">
             <div class="card__header">
               <div class="card__icon" style="background:var(--card-soft); border-color:var(--card-color)">
                 <svg viewBox="0 0 48 48" fill="none" aria-hidden="true">
-                  <path d="M16 8 L10 20 L18 20 L18 40 L30 40 L30 20 L38 20 L32 8" stroke="#059669" stroke-width="2.5" stroke-linejoin="round"/>
-                  <line x1="16" y1="8" x2="32" y2="8" stroke="#059669" stroke-width="2.5" stroke-linecap="round"/>
-                  <path d="M22 14 Q24 12 26 14" stroke="#059669" stroke-width="2" stroke-linecap="round" fill="none"/>
-                  <circle cx="24" cy="14" r="2" fill="#059669" opacity="0.5"/>
+                  <path d="M16 8 L10 20 L18 20 L18 40 L30 40 L30 20 L38 20 L32 8" stroke="#B84E0C" stroke-width="2.5" stroke-linejoin="round"/>
+                  <line x1="16" y1="8" x2="32" y2="8" stroke="#B84E0C" stroke-width="2.5" stroke-linecap="round"/>
+                  <path d="M22 14 Q24 12 26 14" stroke="#B84E0C" stroke-width="2" stroke-linecap="round" fill="none"/>
+                  <circle cx="24" cy="14" r="2" fill="#B84E0C" opacity="0.5"/>
                 </svg>
               </div>
               <div class="card__badges">
@@ -466,15 +457,15 @@
 
           <!-- Card 8: Soporte Técnico -->
           <article class="card" data-category="tecnico" data-carrera="soporte"
-            style="--card-color:#1D4ED8; --card-soft:rgba(29,78,216,0.10);"
+            style="--card-color:#0A6C9E; --card-soft:rgba(10,108,158,0.10);"
             aria-label="Programa: Soporte Técnico">
             <div class="card__header">
               <div class="card__icon" style="background:var(--card-soft); border-color:var(--card-color)">
                 <svg viewBox="0 0 48 48" fill="none" aria-hidden="true">
-                  <rect x="6" y="10" width="36" height="24" rx="3" stroke="#1D4ED8" stroke-width="2.5"/>
-                  <line x1="16" y1="38" x2="32" y2="38" stroke="#1D4ED8" stroke-width="2.5" stroke-linecap="round"/>
-                  <line x1="24" y1="34" x2="24" y2="38" stroke="#1D4ED8" stroke-width="2.5" stroke-linecap="round"/>
-                  <path d="M18 22 h4 l2-5 3 10 2-5 h5" stroke="#1D4ED8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <rect x="6" y="10" width="36" height="24" rx="3" stroke="#0A6C9E" stroke-width="2.5"/>
+                  <line x1="16" y1="38" x2="32" y2="38" stroke="#0A6C9E" stroke-width="2.5" stroke-linecap="round"/>
+                  <line x1="24" y1="34" x2="24" y2="38" stroke="#0A6C9E" stroke-width="2.5" stroke-linecap="round"/>
+                  <path d="M18 22 h4 l2-5 3 10 2-5 h5" stroke="#0A6C9E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                 </svg>
               </div>
               <div class="card__badges">
@@ -498,17 +489,17 @@
 
           <!-- Card 9: Apoyo Administrativo -->
           <article class="card" data-category="tecnico" data-carrera="administrativo"
-            style="--card-color:#7C3AED; --card-soft:rgba(124,58,237,0.10);"
+            style="--card-color:#1A7F26; --card-soft:rgba(26,127,38,0.10);"
             aria-label="Programa: Apoyo Administrativo">
             <div class="card__header">
               <div class="card__icon" style="background:var(--card-soft); border-color:var(--card-color)">
                 <svg viewBox="0 0 48 48" fill="none" aria-hidden="true">
-                  <rect x="10" y="6" width="28" height="36" rx="3" stroke="#7C3AED" stroke-width="2.5"/>
-                  <line x1="16" y1="16" x2="32" y2="16" stroke="#7C3AED" stroke-width="2" stroke-linecap="round"/>
-                  <line x1="16" y1="22" x2="32" y2="22" stroke="#7C3AED" stroke-width="2" stroke-linecap="round"/>
-                  <line x1="16" y1="28" x2="26" y2="28" stroke="#7C3AED" stroke-width="2" stroke-linecap="round"/>
-                  <circle cx="34" cy="36" r="6" fill="white" stroke="#7C3AED" stroke-width="2"/>
-                  <path d="M31 36 l2 2 4-4" stroke="#7C3AED" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                  <rect x="10" y="6" width="28" height="36" rx="3" stroke="#1A7F26" stroke-width="2.5"/>
+                  <line x1="16" y1="16" x2="32" y2="16" stroke="#1A7F26" stroke-width="2" stroke-linecap="round"/>
+                  <line x1="16" y1="22" x2="32" y2="22" stroke="#1A7F26" stroke-width="2" stroke-linecap="round"/>
+                  <line x1="16" y1="28" x2="26" y2="28" stroke="#1A7F26" stroke-width="2" stroke-linecap="round"/>
+                  <circle cx="34" cy="36" r="6" fill="white" stroke="#1A7F26" stroke-width="2"/>
+                  <path d="M31 36 l2 2 4-4" stroke="#1A7F26" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
                 </svg>
               </div>
               <div class="card__badges">
@@ -652,8 +643,8 @@
                   aria-expanded="false" aria-controls="faq-1-panel" id="faq-1-btn">
                   <span class="accordion__icon" aria-hidden="true">
                     <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
-                      <circle cx="10" cy="10" r="8" stroke="#C8006A" stroke-width="1.8"/>
-                      <text x="10" y="14" text-anchor="middle" font-size="11" fill="#C8006A" font-weight="bold">14</text>
+                      <circle cx="10" cy="10" r="8" stroke="#0A6C9E" stroke-width="1.8"/>
+                      <text x="10" y="14" text-anchor="middle" font-size="11" fill="#0A6C9E" font-weight="bold">14</text>
                     </svg>
                   </span>
                   <span class="accordion__question">¿Cuál es la edad mínima para inscribirme?</span>
@@ -680,8 +671,8 @@
                   aria-expanded="false" aria-controls="faq-2-panel" id="faq-2-btn">
                   <span class="accordion__icon" aria-hidden="true">
                     <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
-                      <circle cx="10" cy="10" r="8" stroke="#F5C200" stroke-width="1.8" fill="rgba(245,194,0,0.1)"/>
-                      <path d="M7 10l2 2 4-4" stroke="#D97706" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      <circle cx="10" cy="10" r="8" stroke="#F9BB23" stroke-width="1.8" fill="rgba(249,187,35,0.1)"/>
+                      <path d="M7 10l2 2 4-4" stroke="#9A6A00" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>
                   </span>
                   <span class="accordion__question">¿La enseñanza es realmente 100% gratuita?</span>
@@ -708,10 +699,10 @@
                   aria-expanded="false" aria-controls="faq-3-panel" id="faq-3-btn">
                   <span class="accordion__icon" aria-hidden="true">
                     <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
-                      <rect x="3" y="2" width="14" height="16" rx="2" stroke="#2563EB" stroke-width="1.8"/>
-                      <line x1="6" y1="7" x2="14" y2="7" stroke="#2563EB" stroke-width="1.5" stroke-linecap="round"/>
-                      <line x1="6" y1="10" x2="14" y2="10" stroke="#2563EB" stroke-width="1.5" stroke-linecap="round"/>
-                      <line x1="6" y1="13" x2="10" y2="13" stroke="#2563EB" stroke-width="1.5" stroke-linecap="round"/>
+                      <rect x="3" y="2" width="14" height="16" rx="2" stroke="#0A6C9E" stroke-width="1.8"/>
+                      <line x1="6" y1="7" x2="14" y2="7" stroke="#0A6C9E" stroke-width="1.5" stroke-linecap="round"/>
+                      <line x1="6" y1="10" x2="14" y2="10" stroke="#0A6C9E" stroke-width="1.5" stroke-linecap="round"/>
+                      <line x1="6" y1="13" x2="10" y2="13" stroke="#0A6C9E" stroke-width="1.5" stroke-linecap="round"/>
                     </svg>
                   </span>
                   <span class="accordion__question">¿Qué documentos necesito presentar?</span>
@@ -740,10 +731,10 @@
                   aria-expanded="false" aria-controls="faq-4-panel" id="faq-4-btn">
                   <span class="accordion__icon" aria-hidden="true">
                     <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
-                      <rect x="2" y="4" width="16" height="14" rx="2" stroke="#059669" stroke-width="1.8"/>
-                      <line x1="6" y1="2" x2="6" y2="6" stroke="#059669" stroke-width="1.8" stroke-linecap="round"/>
-                      <line x1="14" y1="2" x2="14" y2="6" stroke="#059669" stroke-width="1.8" stroke-linecap="round"/>
-                      <line x1="2" y1="9" x2="18" y2="9" stroke="#059669" stroke-width="1.5"/>
+                      <rect x="2" y="4" width="16" height="14" rx="2" stroke="#1A7F26" stroke-width="1.8"/>
+                      <line x1="6" y1="2" x2="6" y2="6" stroke="#1A7F26" stroke-width="1.8" stroke-linecap="round"/>
+                      <line x1="14" y1="2" x2="14" y2="6" stroke="#1A7F26" stroke-width="1.8" stroke-linecap="round"/>
+                      <line x1="2" y1="9" x2="18" y2="9" stroke="#1A7F26" stroke-width="1.5"/>
                     </svg>
                   </span>
                   <span class="accordion__question">¿Cuándo son los períodos de matrícula?</span>
@@ -777,8 +768,8 @@
                   aria-expanded="false" aria-controls="faq-5-panel" id="faq-5-btn">
                   <span class="accordion__icon" aria-hidden="true">
                     <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
-                      <circle cx="10" cy="10" r="8" stroke="#9333EA" stroke-width="1.8"/>
-                      <polyline points="10,5 10,10 13,13" stroke="#9333EA" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                      <circle cx="10" cy="10" r="8" stroke="#1A7F26" stroke-width="1.8"/>
+                      <polyline points="10,5 10,10 13,13" stroke="#1A7F26" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>
                   </span>
                   <span class="accordion__question">¿Puedo estudiar si ya tengo trabajo o familia?</span>
@@ -811,8 +802,8 @@
               <div class="form-wrap__header">
                 <div class="form-wrap__icon" aria-hidden="true">
                   <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
-                    <path d="M14 3 L25 9 L25 19 L14 25 L3 19 L3 9 Z" stroke="#C8006A" stroke-width="1.8" fill="rgba(200,0,106,0.07)"/>
-                    <path d="M9 14l3 3 7-7" stroke="#C8006A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M14 3 L25 9 L25 19 L14 25 L3 19 L3 9 Z" stroke="#0A6C9E" stroke-width="1.8" fill="rgba(10,108,158,0.07)"/>
+                    <path d="M9 14l3 3 7-7" stroke="#0A6C9E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                   </svg>
                 </div>
                 <div>
@@ -962,8 +953,8 @@
               <div class="form-success" id="form-success" hidden aria-live="assertive" role="status">
                 <div class="form-success__icon" aria-hidden="true">
                   <svg width="56" height="56" viewBox="0 0 56 56" fill="none">
-                    <circle cx="28" cy="28" r="26" fill="rgba(5,150,105,0.10)" stroke="#059669" stroke-width="2"/>
-                    <path d="M18 28l7 7 14-14" stroke="#059669" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                    <circle cx="28" cy="28" r="26" fill="rgba(26,127,38,0.10)" stroke="#1A7F26" stroke-width="2"/>
+                    <path d="M18 28l7 7 14-14" stroke="#1A7F26" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
                   </svg>
                 </div>
                 <h3 class="form-success__title">¡Ya casi terminas!</h3>
@@ -1070,10 +1061,10 @@
 
           <!-- Tarjeta: Dirección -->
           <div class="contacto-card" aria-label="Dirección física">
-            <div class="contacto-card__icon" style="--c-accent:#E84A12; --c-soft:rgba(232,74,18,0.10)">
+            <div class="contacto-card__icon" style="--c-accent:#B84E0C; --c-soft:rgba(184,78,12,0.10)">
               <svg width="28" height="28" viewBox="0 0 28 28" fill="none" aria-hidden="true">
-                <path d="M14 2C9.58 2 6 5.58 6 10c0 6.63 8 16 8 16s8-9.37 8-16c0-4.42-3.58-8-8-8z" stroke="#E84A12" stroke-width="1.8" fill="rgba(232,74,18,0.08)"/>
-                <circle cx="14" cy="10" r="3" stroke="#E84A12" stroke-width="1.8"/>
+                <path d="M14 2C9.58 2 6 5.58 6 10c0 6.63 8 16 8 16s8-9.37 8-16c0-4.42-3.58-8-8-8z" stroke="#B84E0C" stroke-width="1.8" fill="rgba(184,78,12,0.08)"/>
+                <circle cx="14" cy="10" r="3" stroke="#B84E0C" stroke-width="1.8"/>
               </svg>
             </div>
             <h3 class="contacto-card__title">Dirección</h3>
@@ -1091,9 +1082,9 @@
 
           <!-- Tarjeta: Teléfonos -->
           <div class="contacto-card" aria-label="Teléfonos de contacto">
-            <div class="contacto-card__icon" style="--c-accent:#C8006A; --c-soft:rgba(200,0,106,0.10)">
+            <div class="contacto-card__icon" style="--c-accent:#0A6C9E; --c-soft:rgba(10,108,158,0.10)">
               <svg width="28" height="28" viewBox="0 0 28 28" fill="none" aria-hidden="true">
-                <path d="M8 4h4l2 5-2.5 1.5A16 16 0 0018 16.5L19.5 14l5 2v4a2 2 0 01-2 2C9.16 22 6 8.84 6 6a2 2 0 012-2z" stroke="#C8006A" stroke-width="1.8" stroke-linejoin="round" fill="rgba(200,0,106,0.08)"/>
+                <path d="M8 4h4l2 5-2.5 1.5A16 16 0 0018 16.5L19.5 14l5 2v4a2 2 0 01-2 2C9.16 22 6 8.84 6 6a2 2 0 012-2z" stroke="#0A6C9E" stroke-width="1.8" stroke-linejoin="round" fill="rgba(10,108,158,0.08)"/>
               </svg>
             </div>
             <h3 class="contacto-card__title">Teléfonos</h3>
@@ -1127,10 +1118,10 @@
 
           <!-- Tarjeta: Horario de atención -->
           <div class="contacto-card" aria-label="Horario de atención">
-            <div class="contacto-card__icon" style="--c-accent:#7C3AED; --c-soft:rgba(124,58,237,0.10)">
+            <div class="contacto-card__icon" style="--c-accent:#1A7F26; --c-soft:rgba(26,127,38,0.10)">
               <svg width="28" height="28" viewBox="0 0 28 28" fill="none" aria-hidden="true">
-                <circle cx="14" cy="14" r="11" stroke="#7C3AED" stroke-width="1.8" fill="rgba(124,58,237,0.08)"/>
-                <polyline points="14,7 14,14 18,17" stroke="#7C3AED" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                <circle cx="14" cy="14" r="11" stroke="#1A7F26" stroke-width="1.8" fill="rgba(26,127,38,0.08)"/>
+                <polyline points="14,7 14,14 18,17" stroke="#1A7F26" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
               </svg>
             </div>
             <h3 class="contacto-card__title">Horario de Atención</h3>
@@ -1161,9 +1152,9 @@
           fill="url(#floral-grad)"/>
         <defs>
           <linearGradient id="floral-grad" x1="0" y1="0" x2="1440" y2="0" gradientUnits="userSpaceOnUse">
-            <stop offset="0%" stop-color="#C8006A"/>
-            <stop offset="50%" stop-color="#E8001C"/>
-            <stop offset="100%" stop-color="#F5C200"/>
+            <stop offset="0%" stop-color="#5BC0EB"/>
+            <stop offset="50%" stop-color="#EC6E17"/>
+            <stop offset="100%" stop-color="#F9BB23"/>
           </linearGradient>
         </defs>
       </svg>
@@ -1174,16 +1165,8 @@
 
         <!-- ── Columna 1: Marca institucional ── -->
         <div class="footer__brand-col">
-          <!-- Logo SVG -->
           <a href="#inicio" class="footer__logo" aria-label="Ir al inicio">
-            <svg width="48" height="48" viewBox="0 0 40 40" fill="none" aria-hidden="true">
-              <ellipse cx="20" cy="10" rx="5" ry="9" fill="#C8006A" opacity="0.9"/>
-              <ellipse cx="30" cy="20" rx="9" ry="5" fill="#E8001C" opacity="0.85"/>
-              <ellipse cx="20" cy="30" rx="5" ry="9" fill="#C8006A" opacity="0.9"/>
-              <ellipse cx="10" cy="20" rx="9" ry="5" fill="#E8001C" opacity="0.85"/>
-              <circle cx="20" cy="20" r="6" fill="#F5C200"/>
-              <circle cx="20" cy="20" r="3" fill="#C8006A"/>
-            </svg>
+            <img src="img/logo.jpg" alt="" width="56" height="56" class="footer__logo-img" />
             <div class="footer__logo-text">
               <span class="footer__logo-name">CETPRO</span>
               <span class="footer__logo-sub">Joaquín López Antay</span>
@@ -1247,14 +1230,14 @@
           <ul class="footer__contact-list" role="list">
             <li class="footer__contact-item">
               <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
-                <path d="M8 1C5.24 1 3 3.24 3 6c0 3.75 5 9 5 9s5-5.25 5-9c0-2.76-2.24-5-5-5z" stroke="#F5C200" stroke-width="1.3"/>
-                <circle cx="8" cy="6" r="2" stroke="#F5C200" stroke-width="1.3"/>
+                <path d="M8 1C5.24 1 3 3.24 3 6c0 3.75 5 9 5 9s5-5.25 5-9c0-2.76-2.24-5-5-5z" stroke="#F9BB23" stroke-width="1.3"/>
+                <circle cx="8" cy="6" r="2" stroke="#F9BB23" stroke-width="1.3"/>
               </svg>
               <span>Jr. Bellido N.° 771<br/>Ayacucho, Perú</span>
             </li>
             <li class="footer__contact-item">
               <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
-                <path d="M4.5 2.5h2l1 3-1.5 1A9 9 0 0011 11l1-1.5 3 1v2A1 1 0 0114 13.5C7.1 13.5 2.5 8.9 2.5 2A1 1 0 013.5 1h1z" stroke="#F5C200" stroke-width="1.3" stroke-linejoin="round"/>
+                <path d="M4.5 2.5h2l1 3-1.5 1A9 9 0 0011 11l1-1.5 3 1v2A1 1 0 0114 13.5C7.1 13.5 2.5 8.9 2.5 2A1 1 0 013.5 1h1z" stroke="#F9BB23" stroke-width="1.3" stroke-linejoin="round"/>
               </svg>
               <span>
                 <a href="tel:+5166402682" class="footer__tel">(066) 402-682</a><br/>
@@ -1263,8 +1246,8 @@
             </li>
             <li class="footer__contact-item">
               <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
-                <circle cx="8" cy="8" r="6" stroke="#F5C200" stroke-width="1.3"/>
-                <polyline points="8,4 8,8 10,10" stroke="#F5C200" stroke-width="1.3" stroke-linecap="round"/>
+                <circle cx="8" cy="8" r="6" stroke="#F9BB23" stroke-width="1.3"/>
+                <polyline points="8,4 8,8 10,10" stroke="#F9BB23" stroke-width="1.3" stroke-linecap="round"/>
               </svg>
               <span>Lun – Vie: 8:00 – 17:00 hrs.</span>
             </li>
@@ -1298,7 +1281,7 @@
   </a>
 
   <!-- ── JavaScript Principal ──────────────────────────────────── -->
-  <script src="js/main.js?v=3" defer></script>
+  <script src="js/main.js?v=5" defer></script>
 
 </body>
 </html>
