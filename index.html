@@ -123,7 +123,7 @@
   <main id="main-content" role="main">
 
     <!-- ============================================================
-         HERO: el retablo se abre al cargar; un toque lo abre o cierra
+         HERO: retablo ayacuchano con las 9 carreras (escenas clicables)
          ============================================================ -->
     <section id="inicio" class="section section--hero" aria-labelledby="hero-title">
       <div class="section__container hero__grid">
@@ -146,21 +146,46 @@
           </ul>
         </div>
 
-        <button class="retablo-btn" id="retablo" type="button" aria-pressed="false"
-          aria-label="Abrir o cerrar las puertas del retablo">
-          <svg class="retablo" viewBox="0 0 300 340" role="img" aria-label="Ilustración de un retablo ayacuchano">
-            <rect width="300" height="340" rx="14" fill="#EC6E17"/>
-            <rect x="14" y="14" width="272" height="312" rx="8" fill="#F9BB23"/>
-            <rect x="30" y="30" width="240" height="280" fill="#BFE3EA"/>
-            <circle cx="150" cy="96" r="30" fill="#F9BB23"/>
-            <path d="M30 250 L100 150 L160 230 L210 170 L270 250 V310 H30Z" fill="#21992E"/>
-            <rect x="120" y="248" width="56" height="62" fill="#F4F0EB"/><path d="M114 250 L148 218 L182 250Z" fill="#C0262D"/>
-            <circle cx="70" cy="278" r="9" fill="#C0262D"/><rect x="62" y="288" width="16" height="22" fill="#C0262D"/>
-            <circle cx="232" cy="278" r="9" fill="#0A6C9E"/><rect x="224" y="288" width="16" height="22" fill="#0A6C9E"/>
-            <g class="puerta puerta--izq"><rect x="30" y="30" width="120" height="280" fill="#5BC0EB"/><rect x="42" y="42" width="96" height="256" fill="none" stroke="#F9BB23" stroke-width="4"/><circle cx="132" cy="170" r="6" fill="#F9BB23"/></g>
-            <g class="puerta puerta--der"><rect x="150" y="30" width="120" height="280" fill="#C0262D"/><rect x="162" y="42" width="96" height="256" fill="none" stroke="#F9BB23" stroke-width="4"/><circle cx="168" cy="170" r="6" fill="#F9BB23"/></g>
-          </svg>
-        </button>
+        <!-- Retablo ayacuchano artesanal con las 9 carreras.
+             Cada compartimento es una zona clicable que abre la ficha de su carrera. -->
+        <figure class="retablo" id="retablo">
+          <picture>
+            <source srcset="img/retablo-carreras.webp" type="image/webp">
+            <img class="retablo__foto" src="img/retablo-carreras.jpg" width="1200" height="926"
+              alt="Retablo ayacuchano artesanal abierto, con puertas y copete pintados con flores tradicionales. En su interior, figuras de arcilla representan las nueve carreras: Servicio Básico Gastronómico, Panadería y Estilismo en el nivel superior; Mantenimiento de Casas, Mantenimiento Electrónico, Confección de Prendas, Cuidado del Adulto Mayor, Soporte Técnico y Apoyo Administrativo en el inferior."
+              fetchpriority="high" decoding="async">
+          </picture>
+          <div class="retablo__zonas">
+            <button class="retablo__zona" type="button" data-carrera="gastronomia"
+              style="left:19.2%;top:21.4%;width:22.3%;height:30.5%"
+              aria-label="Ver detalles de Servicio Básico Gastronómico"><span class="retablo__tip">Servicio Básico Gastronómico</span></button>
+            <button class="retablo__zona" type="button" data-carrera="panaderia"
+              style="left:41.4%;top:21.4%;width:19.7%;height:30.5%"
+              aria-label="Ver detalles de Panadería"><span class="retablo__tip">Panadería</span></button>
+            <button class="retablo__zona" type="button" data-carrera="estilismo"
+              style="left:61.1%;top:21.4%;width:19.7%;height:30.5%"
+              aria-label="Ver detalles de Estilismo"><span class="retablo__tip">Estilismo</span></button>
+            <button class="retablo__zona" type="button" data-carrera="casas"
+              style="left:19.4%;top:53.6%;width:13.5%;height:33.2%"
+              aria-label="Ver detalles de Mantenimiento de Casas"><span class="retablo__tip">Mantenimiento de Casas</span></button>
+            <button class="retablo__zona" type="button" data-carrera="electronico"
+              style="left:32.9%;top:53.6%;width:10.4%;height:33.2%"
+              aria-label="Ver detalles de Mantenimiento Electrónico"><span class="retablo__tip">Mantenimiento Electrónico</span></button>
+            <button class="retablo__zona" type="button" data-carrera="confeccion"
+              style="left:43.7%;top:53.6%;width:12.4%;height:33.2%"
+              aria-label="Ver detalles de Confección de Prendas"><span class="retablo__tip">Confección de Prendas</span></button>
+            <button class="retablo__zona" type="button" data-carrera="adultomayor"
+              style="left:57.2%;top:53.6%;width:5.7%;height:33.2%"
+              aria-label="Ver detalles de Cuidado del Adulto Mayor"><span class="retablo__tip">Cuidado del Adulto Mayor</span></button>
+            <button class="retablo__zona" type="button" data-carrera="soporte"
+              style="left:62.9%;top:53.6%;width:6.2%;height:33.2%"
+              aria-label="Ver detalles de Soporte Técnico"><span class="retablo__tip">Soporte Técnico</span></button>
+            <button class="retablo__zona" type="button" data-carrera="administrativo"
+              style="left:69.1%;top:53.6%;width:11.6%;height:33.2%"
+              aria-label="Ver detalles de Apoyo Administrativo"><span class="retablo__tip">Apoyo Administrativo</span></button>
+          </div>
+          <figcaption class="retablo__pie">Toca una escena del retablo para conocer la carrera</figcaption>
+        </figure>
       </div>
     </section>
 

@@ -1211,21 +1211,16 @@ const FormularioInscripcion = (() => {
    ════════════════════════════════════════════════════════════════ */
 
 /* ─── MÓDULO 11: RETABLO DEL HERO ────────────────────────────── */
-// Las puertas se abren solas al cargar; un toque las abre o cierra.
+// Cada escena del retablo abre la ficha ("Ver Detalles") de su carrera.
 const Retablo = (() => {
 
-  const btn = document.getElementById('retablo');
-
-  const setAbierto = (abierto) => {
-    btn.classList.toggle('retablo-btn--abierto', abierto);
-    btn.setAttribute('aria-pressed', String(abierto));
-  };
-
-  const init = (sinMovimiento) => {
-    if (!btn) return;
-    btn.addEventListener('click', () =>
-      setAbierto(!btn.classList.contains('retablo-btn--abierto')));
-    setTimeout(() => setAbierto(true), sinMovimiento ? 0 : 700);
+  const init = () => {
+    const retablo = document.getElementById('retablo');
+    if (!retablo) return;
+    retablo.addEventListener('click', (evento) => {
+      const zona = evento.target.closest('.retablo__zona');
+      if (zona) ModalCarreras.abrir(zona.dataset.carrera, zona);
+    });
   };
 
   return { init };
