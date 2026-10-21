@@ -1700,3 +1700,39 @@ abbr[title] { text-decoration:underline dotted; cursor:help; }
 .btn--whatsapp { background:#0E7A3F; box-shadow:0 4px 20px rgba(14,122,63,0.35); }
 .btn--whatsapp:hover { background:#0B6534; box-shadow:0 8px 28px rgba(14,122,63,0.45); }
 .form-success__retry { font-size:var(--font-size-sm); font-weight:var(--font-weight-semibold); color:var(--color-primary); text-decoration:underline; }
+
+
+/* ─── FICHA DE MATRÍCULA (página propia: matricula.html) ─────── */
+.matricula-cta__pasos { list-style: none; counter-reset: paso; display: flex; flex-direction: column; gap: var(--space-4); margin-bottom: var(--space-6); }
+.matricula-cta__pasos li { counter-increment: paso; display: flex; gap: var(--space-3); align-items: flex-start; font-size: var(--font-size-sm); color: var(--color-text-secondary); line-height: var(--line-height-normal); }
+.matricula-cta__pasos li::before { content: counter(paso); flex-shrink: 0; width: 28px; height: 28px; border-radius: var(--radius-full); background: var(--color-sky); color: var(--color-on-sky); font-weight: var(--font-weight-bold); display: flex; align-items: center; justify-content: center; }
+.matricula-cta__pasos strong { color: var(--color-text-primary); }
+.matricula-cta .btn { width: 100%; justify-content: center; }
+.matricula-cta__nota { margin-top: var(--space-3); text-align: center; font-size: var(--font-size-xs); color: var(--color-text-muted); }
+
+.matricula-page { padding-top: calc(var(--space-20) + var(--space-8)); min-height: 80vh; }
+.matricula-lateral { display: flex; flex-direction: column; gap: var(--space-5); }
+.matricula-lateral__card { background: var(--color-surface); border: 1px solid var(--color-neutral-dark); border-radius: var(--radius-xl); padding: var(--space-6); box-shadow: var(--shadow-sm); }
+.matricula-lateral__card p { font-size: var(--font-size-sm); color: var(--color-text-secondary); line-height: var(--line-height-normal); margin-top: var(--space-2); }
+.matricula-lateral__card a { color: var(--color-primary); font-weight: var(--font-weight-semibold); }
+@media (min-width: 900px) {
+  .matricula-page .form-column { flex: 3; }
+  .matricula-page .matricula-lateral { flex: 2; position: sticky; top: calc(var(--space-20) + var(--space-4)); }
+}
+.form-success[hidden], .inscripcion-form[hidden] { display: none !important; }
+.matricula-lateral__card { text-align: left; }
+.matricula-lateral__card .faq-list li { display: block; }
+.matricula-lateral__card .faq-list li::before { margin-right: var(--space-2); }
+
+/* Requisitos sin formulario: preguntas centradas */
+.inscripcion-layout--solo { justify-content: center; }
+.inscripcion-layout--solo .faq-column { flex: 0 1 820px; width: 100%; margin-inline: auto; }
+
+/* Novedades: tarjetas de Facebook y YouTube iguales y simétricas */
+.red-card__btn { margin-top: auto; }
+.red-card__media--video .red-card__placeholder { margin: auto; }
+@media (min-width: 900px) {
+  .redes-grid { align-items: stretch; }
+  .red-card__media,
+  .red-card__media--video { height: 420px; aspect-ratio: auto; }
+}

@@ -14,8 +14,8 @@
 const CONFIG = {
   // Número de WhatsApp con código de país, sin "+" ni espacios (ej.: 51987654321)
   whatsapp: '51900000000',
-  facebook: 'https://www.facebook.com/cetprojla',
-  youtube:  'https://www.youtube.com/@[CANAL_DEL_CETPRO]',
+  facebook: 'https://www.facebook.com/joaquin.lopezantay',
+  youtube:  'https://www.youtube.com/channel/UCECSHifrlczh9HVelccs7hQ',
   // ID del video destacado: lo que va después de "v=" en el enlace de YouTube.
   // Vacío = se muestra un aviso de "próximamente".
   youtubeVideo: '',
@@ -416,7 +416,7 @@ const CARRERAS_DATA = {
       'Certificado de salud (se tramita en el CESAMICA)',
       'Tener entre 15 y 55 años de edad',
     ],
-    turnos: ['Mañana (8:00 – 13:00)', 'Tarde (14:00 – 19:00)'],
+    turnos: ['Mañana (7:30 – 12:30)', 'Tarde (14:00 – 18:45)'],
   },
 
   panaderia: {
@@ -433,7 +433,7 @@ const CARRERAS_DATA = {
       'Certificado de salud actualizado',
       'Tener entre 15 y 55 años de edad',
     ],
-    turnos: ['Mañana (7:00 – 12:00)', 'Tarde (13:00 – 18:00)'],
+    turnos: ['Mañana (7:30 – 12:30)', 'Tarde (14:00 – 18:45)'],
   },
 
   adultomayor: {
@@ -450,7 +450,7 @@ const CARRERAS_DATA = {
       'Certificado de salud y de buena conducta',
       'Tener entre 18 y 55 años de edad',
     ],
-    turnos: ['Mañana (8:00 – 13:00)'],
+    turnos: ['Mañana (7:30 – 12:30)'],
   },
 
   casas: {
@@ -466,7 +466,7 @@ const CARRERAS_DATA = {
       '2 fotografías tamaño carné (fondo blanco)',
       'Tener entre 15 y 55 años de edad',
     ],
-    turnos: ['Mañana (8:00 – 13:00)', 'Tarde (14:00 – 19:00)'],
+    turnos: ['Mañana (7:30 – 12:30)', 'Tarde (14:00 – 18:45)'],
   },
 
   estilismo: {
@@ -483,7 +483,7 @@ const CARRERAS_DATA = {
       'Certificado de salud actualizado',
       'Tener entre 16 y 55 años de edad',
     ],
-    turnos: ['Mañana (8:00 – 13:00)', 'Tarde (14:00 – 19:00)', 'Noche (19:00 – 22:00)'],
+    turnos: ['Mañana (7:30 – 12:30)', 'Tarde (14:00 – 18:45)'],
   },
 
   electronico: {
@@ -499,7 +499,7 @@ const CARRERAS_DATA = {
       '2 fotografías tamaño carné (fondo blanco)',
       'Tener entre 16 y 55 años de edad',
     ],
-    turnos: ['Mañana (8:00 – 13:00)', 'Tarde (14:00 – 19:00)'],
+    turnos: ['Mañana (7:30 – 12:30)', 'Tarde (14:00 – 18:45)'],
   },
 
   confeccion: {
@@ -515,7 +515,7 @@ const CARRERAS_DATA = {
       '2 fotografías tamaño carné (fondo blanco)',
       'Tener entre 15 y 55 años de edad',
     ],
-    turnos: ['Mañana (8:00 – 13:00)', 'Tarde (14:00 – 19:00)'],
+    turnos: ['Mañana (7:30 – 12:30)', 'Tarde (14:00 – 18:45)'],
   },
 
   soporte: {
@@ -532,7 +532,7 @@ const CARRERAS_DATA = {
       'Conocimientos básicos de computadora (deseable)',
       'Tener entre 16 y 55 años de edad',
     ],
-    turnos: ['Mañana (8:00 – 13:00)', 'Tarde (14:00 – 19:00)'],
+    turnos: ['Mañana (7:30 – 12:30)', 'Tarde (14:00 – 18:45)'],
   },
 
   administrativo: {
@@ -548,7 +548,7 @@ const CARRERAS_DATA = {
       '2 fotografías tamaño carné (fondo blanco)',
       'Tener entre 16 y 55 años de edad',
     ],
-    turnos: ['Mañana (8:00 – 13:00)', 'Tarde (14:00 – 19:00)'],
+    turnos: ['Mañana (7:30 – 12:30)', 'Tarde (14:00 – 18:45)'],
   },
 
 };
@@ -845,12 +845,12 @@ const ModalCarreras = (() => {
       if (btn) btn.addEventListener('click', cerrar);
     });
 
-    // Click en el CTA: preselecciona la carrera en el formulario y cierra el modal
+    // Click en el CTA: abre la ficha de matrícula (otra pestaña) con la carrera ya elegida
     if (btnCta) {
       btnCta.addEventListener('click', () => {
-        const select = document.getElementById('f-carrera');
-        if (select && carreraActual) select.value = carreraActual;
-        ultimoEnfocado = null; // no devolver el foco a la tarjeta: vamos al formulario
+        btnCta.href = carreraActual
+          ? `matricula.html?carrera=${encodeURIComponent(carreraActual)}`
+          : 'matricula.html';
         cerrar();
       });
     }
@@ -1114,6 +1114,13 @@ const FormularioInscripcion = (() => {
   const init = () => {
     if (!form) return;
 
+    // ── Preseleccionar la carrera si llega en el enlace (matricula.html?carrera=panaderia) ──
+    const carreraURL = new URLSearchParams(location.search).get('carrera');
+    const selectCarrera = document.getElementById('f-carrera');
+    if (carreraURL && selectCarrera?.querySelector(`option[value="${CSS.escape(carreraURL)}"]`)) {
+      selectCarrera.value = carreraURL;
+    }
+
     // ── Submit del formulario ──
     form.addEventListener('submit', (e) => {
       e.preventDefault();
@@ -1294,11 +1301,12 @@ const Redes = (() => {
     if (!cont) return;
     // El plugin de Facebook acepta anchos de 180 a 500 px
     const ancho = Math.round(Math.min(500, Math.max(180, cont.clientWidth)));
+    const alto  = Math.max(300, cont.clientHeight || 420);
     const src = 'https://www.facebook.com/plugins/page.php?' + new URLSearchParams({
-      href: CONFIG.facebook, tabs: 'timeline', width: ancho, height: 480,
+      href: CONFIG.facebook, tabs: 'timeline', width: ancho, height: alto,
       small_header: 'true', adapt_container_width: 'true', hide_cover: 'false', show_facepile: 'false',
     });
-    cont.innerHTML = `<iframe src="${src}" width="${ancho}" height="480" title="Publicaciones recientes del CETPRO en Facebook"
+    cont.innerHTML = `<iframe src="${src}" width="${ancho}" height="${alto}" title="Publicaciones recientes del CETPRO en Facebook"
       style="border:none;overflow:hidden" scrolling="no" loading="lazy" allow="encrypted-media"></iframe>`;
   };
 
