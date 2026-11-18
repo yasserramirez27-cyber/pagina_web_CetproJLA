@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex, nofollow" />
+  <title>Panel del administrador · CETPRO JLA</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/styles/admin.css?v=1" />
+  <link rel="icon" href="/img/logo.jpg" type="image/jpeg" />
+</head>
+<body class="panel">
+
+  <a class="saltar" href="#contenido">Saltar al contenido</a>
+
+  <!-- ── Menú lateral ─────────────────────────────────────── -->
+  <aside class="lateral" id="lateral" aria-label="Menú del panel">
+    <div class="lateral__marca">
+      <img src="/img/logo.jpg" alt="" width="44" height="44" />
+      <span><strong>CETPRO JLA</strong>Administrador</span>
+    </div>
+    <nav class="lateral__nav" id="menu" aria-label="Módulos"></nav>
+    <div class="lateral__pie">
+      <a class="lateral__web" href="/" target="_blank" rel="noopener">Ver la web <span aria-hidden="true">↗</span></a>
+      <button type="button" class="lateral__salir" id="btn-salir"></button>
+    </div>
+  </aside>
+  <div class="lateral-velo" id="lateral-velo" hidden></div>
+
+  <!-- ── Área principal ───────────────────────────────────── -->
+  <div class="principal">
+    <header class="barra">
+      <button type="button" class="btn-icono barra__menu" id="btn-menu" aria-label="Abrir menú" aria-controls="lateral" aria-expanded="false"></button>
+      <div class="barra__titulos">
+        <h1 id="titulo-modulo">Dashboard</h1>
+        <p id="subtitulo-modulo">Gestión del sitio web institucional</p>
+      </div>
+      <a class="btn-icono barra__campana" id="campana" href="#/contactos" aria-label="Consultas sin leer"></a>
+      <div class="barra__usuario" id="usuario-barra"></div>
+    </header>
+
+    <main class="contenido" id="contenido" tabindex="-1">
+      <div class="cargando">Cargando…</div>
+    </main>
+  </div>
+
+  <script type="module" src="/admin/admin.js?v=1"></script>
+</body>
+</html>
