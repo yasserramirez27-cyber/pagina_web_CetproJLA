@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{{titulo}} | CETPRO Joaquín López Antay</title>
+  <meta name="description" content="{{resumen}}" />
+  <meta property="og:title" content="{{titulo}}" />
+  <meta property="og:description" content="{{resumen}}" />
+  <meta property="og:locale" content="es_PE" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/styles/styles.css?v=11" />
+  <link rel="stylesheet" href="/styles/sitio-dinamico.css?v=1" />
+  <meta name="theme-color" content="#5BC0EB" />
+  <link rel="icon" href="/img/logo.jpg" type="image/jpeg" />
+</head>
+<body class="pagina-noticia">
+
+  <header class="noticia-barra">
+    <a href="/" class="noticia-barra__marca" aria-label="Ir al inicio — CETPRO Joaquín López Antay">
+      <img src="/img/logo.jpg" alt="" width="40" height="40" />
+      <span><strong>CETPRO</strong> Joaquín López Antay</span>
+    </a>
+    <a href="/#noticias" class="noticia-barra__volver">← Todas las noticias</a>
+  </header>
+
+  <main class="noticia" id="main-content">
+    <article>
+      <p class="noticia__fecha"><time datetime="{{fecha_iso}}">{{fecha}}</time></p>
+      <h1 class="noticia__titulo">{{titulo}}</h1>
+      <p class="noticia__resumen">{{resumen}}</p>
+      {{{imagen}}}
+      <div class="noticia__contenido">{{{contenido}}}</div>
+    </article>
+    <aside class="noticia__cta">
+      <p><strong>¿Te interesa estudiar en el CETPRO?</strong> La educación es gratuita.</p>
+      <a class="btn btn--cta" href="/matricula.html">Inscríbete ahora</a>
+    </aside>
+  </main>
+
+  <footer class="noticia-pie">
+    <p>© {{anio}} {{cfg_institucion_nombre}} · {{cfg_direccion}}, Ayacucho ·
+      <a href="tel:{{cfg_telefono_fijo_tel}}">{{cfg_telefono_fijo}}</a></p>
+  </footer>
+
+</body>
+</html>

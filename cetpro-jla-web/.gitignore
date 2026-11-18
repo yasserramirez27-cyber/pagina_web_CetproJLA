@@ -1,0 +1,15 @@
+# Dependencias
+node_modules/
+
+# Datos generados al usar el panel (no se suben a GitHub)
+database/*.sqlite
+database/*.sqlite.tmp
+public/uploads/**/*
+!public/uploads/**/
+!public/uploads/**/.gitkeep
+
+# Configuración privada
+.env
+
+# Configuración local de Claude Code
+.claude/

@@ -1,0 +1,21 @@
+{
+  "name": "cetpro-jla-web",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Sitio web institucional y panel del administrador del CETPRO Joaquín López Antay (Ayacucho)",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js",
+    "crear-admin": "node database/crear-admin.js",
+    "verificar": "node src/utils/verificar-estructura.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "express": "^4.21.2",
+    "multer": "^2.0.2",
+    "sql.js": "^1.13.0"
+  }
+}

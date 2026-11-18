@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex, nofollow" />
+  <title>Iniciar sesión · Panel CETPRO JLA</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/styles/admin.css?v=1" />
+  <link rel="icon" href="/img/logo.jpg" type="image/jpeg" />
+</head>
+<body class="login">
+
+  <aside class="login__lado" aria-hidden="true">
+    <div class="login__marca">
+      <img src="/img/logo.jpg" alt="" width="56" height="56" />
+      <span><strong>CETPRO JLA</strong>Joaquín López Antay · Ayacucho</span>
+    </div>
+    <p class="login__frase">Cada oficio que se enseña<br>empieza por una puerta abierta.</p>
+    <ul class="login__pasos">
+      <li><span>1</span>Inicia sesión</li>
+      <li><span>2</span>Elige un módulo</li>
+      <li><span>3</span>Crea o edita</li>
+      <li><span>4</span>Publica en la web</li>
+    </ul>
+  </aside>
+
+  <main class="login__principal">
+    <form class="login__form" id="form-login" novalidate>
+      <img class="login__logo-movil" src="/img/logo.jpg" alt="" width="64" height="64" />
+      <p class="login__eyebrow">Panel del administrador</p>
+      <h1>Bienvenido de nuevo</h1>
+      <p class="login__sub">Gestiona el sitio web institucional del CETPRO.</p>
+
+      <div class="login__aviso" id="login-aviso" role="alert" hidden></div>
+
+      <div class="campo">
+        <label for="usuario">Usuario</label>
+        <input id="usuario" name="usuario" type="text" autocomplete="username" autocapitalize="none" required />
+      </div>
+      <div class="campo">
+        <label for="clave">Contraseña</label>
+        <div class="campo-clave">
+          <input id="clave" name="clave" type="password" autocomplete="current-password" required />
+          <button type="button" class="campo-clave__ver" id="ver-clave" aria-label="Mostrar contraseña" aria-pressed="false">Ver</button>
+        </div>
+      </div>
+
+      <button class="btn btn--pri btn--bloque" type="submit" disabled>Ingresar al panel</button>
+
+      <p class="login__nota">Acceso solo para personal autorizado. Tras 5 intentos fallidos el acceso se bloquea 15 minutos.</p>
+      <a class="login__volver" href="/">← Volver a la web</a>
+    </form>
+  </main>
+
+  <script type="module" src="/admin/login.js?v=1"></script>
+</body>
+</html>
